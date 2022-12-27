@@ -1,16 +1,17 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./pages/components/layout/Header";
+import Layout from "./pages/components/layout/Layout";
+import FraudPrevention from "./pages/FraudPrevention";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path={"/"} element={<Header />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path={"/"} element={<FraudPrevention />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
