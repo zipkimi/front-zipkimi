@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/components/layout/Layout";
+import Layout from "./components/layout/Layout";
 import FraudPrevention from "./pages/FraudPrevention";
 
 function App() {
