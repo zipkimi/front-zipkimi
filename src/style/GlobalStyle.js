@@ -3,8 +3,8 @@ import "../assets/font/font.css";
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: "spoqa", "inherit";
     box-sizing: border-box;
+    font-family: "spoqa", "inherit";
   }
 
   html, body, div, span, applet, object, iframe,
@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 14px;
     vertical-align: baseline;
   }
 
@@ -42,7 +42,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1;
   }
 
-  menu, ol, ul {
+  menu, ol, ul, li {
     list-style: none;
   }
 

@@ -1,13 +1,8 @@
 const COLOR = {
-  pointWhite: "#FEEFED",
-  pointOriginal: "#F55C47",
-  pointBlack: "#C44A39",
-  keyWhite: "#E4F2E9",
-  keyOriginal: "#4AA96C",
-  keyBlack: "#0F2216",
-  secondWhite: "#D5D2D2",
-  secondOriginal: "#564A4A",
+  original: "#BB2649",
+  secondOriginal: "#BB264910",
   white: "#FFFFFF",
+  secondWhite: "#D5D2D2",
 };
 
 const ROUND = {
