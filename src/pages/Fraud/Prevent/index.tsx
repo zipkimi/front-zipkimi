@@ -3,6 +3,7 @@ import Card from "../../../components/Card/Card";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { list } from "../../../mockData";
+import OriginalBtn from "../../../components/OriginalBtn";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -24,20 +25,45 @@ const Index = () => {
     likes: 2900,
   };
 
+  const onRegister = () => {
+    console.log("WRITE POST!");
+  };
+
   return (
-    <Ul>
-      <Card {...tempData} onDetail={onDetail} />
-      {list.map((item) => {
-        return <Card onDetail={onDetail} {...item} />;
-      })}
-    </Ul>
+    <Wrapper>
+      <HiddenH3>사기예방법 공유</HiddenH3>
+      <OriginalBtn onClick={onRegister}>글쓰기</OriginalBtn>
+      <Ul>
+        <Card {...tempData} onDetail={onDetail} />
+        {list.map((item, index) => {
+          return <Card key={index} onDetail={onDetail} {...item} />;
+        })}
+      </Ul>
+    </Wrapper>
   );
 };
 
 export default Index;
 
+const Wrapper = styled.section`
+  padding: 2rem 2rem;
+  max-width: 800px;
+  margin: auto;
+  @media screen and (max-width: 480px) {
+    padding: 2rem 1rem;
+  }
+
+  > button {
+    float: right;
+  }
+`;
+
+const HiddenH3 = styled.h3`
+  ${({ theme }) => theme.TEXT.hide};
+`;
+
 const Ul = styled.ul`
-  padding: 2rem;
+  clear: both;
 
   li:not(li:last-child) {
     margin-bottom: 1rem;

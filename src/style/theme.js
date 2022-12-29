@@ -13,7 +13,7 @@ const COLOR = {
   original: "#BB2649",
   secondOriginal: "#BB264910",
   white: "#FFFFFF",
-  secondWhite: "#D5D2D2",
+  secondWhite: "#AEAEAE",
 };
 
 const ROUND = {

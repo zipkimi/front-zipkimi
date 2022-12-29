@@ -5,7 +5,7 @@ import Prevent from "./Prevent";
 const Index = () => {
   return (
     <section>
-      <HiddenH2>사기예방법 공유</HiddenH2>
+      <HiddenH2>사기 및 피해 관련글</HiddenH2>
       <Nav>
         <UlFixed>
           <li>
