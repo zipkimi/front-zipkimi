@@ -18,9 +18,11 @@ const Index = () => {
           contents={
             "사람이 행복하기 위해서는 일을 할 수 있어야 할 뿐 아니라 자신이 한 일을 제대로 판단할 수 있어야 한다."
           }
-          writer={"yunsik cho"}
-          regDt={"2022-12-25"}
           info={{
+            writer: "yunsik cho",
+            regDt: "2022-12-25",
+          }}
+          reaction={{
             comments: 130,
             likes: 2900,
           }}

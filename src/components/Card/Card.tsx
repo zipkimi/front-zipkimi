@@ -6,16 +6,20 @@ type Reaction = {
   likes: number;
 };
 
+type Info = {
+  writer: string;
+  regDt: string;
+};
+
 type Card = {
   title: string;
   contents: string;
-  writer?: string;
-  regDt?: string;
-  info?: Reaction;
+  info?: Info;
+  reaction?: Reaction;
 };
 
 const Card = (props: Card) => {
-  const { title, contents, info, writer, regDt } = props;
+  const { title, contents, info, reaction } = props;
 
   return (
     <Li>
@@ -25,9 +29,9 @@ const Card = (props: Card) => {
           <strong>{title}</strong>
           <p>{contents}</p>
           <div>
-            {writer && <small>{`${writer} / ${regDt}`}</small>}
-            {info && (
-              <small>{`댓글: ${info.comments} 좋아요: ${info.likes}`}</small>
+            {info && <small>{`${info.writer} / ${info.regDt}`}</small>}
+            {reaction && (
+              <small>{`댓글: ${reaction.comments} 좋아요: ${reaction.likes}`}</small>
             )}
           </div>
         </TxtWrapper>
