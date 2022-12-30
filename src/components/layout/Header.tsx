@@ -18,13 +18,19 @@ const header = styled.header`
   width: 1100px;
   height: 35px;
   line-height: 35px;
-  border:1px solid #3587d4
+  border: 1px solid #3587d4;
 `;
 
 const nav = styled.nav`
   margin:0 auto;
-  width: 800px;
+  width:800px;
   height:15px;
   border:1px solid #3587d4
   box-sizing:border-box;
+`;
+
+const div = styled.div`
+  display: block;
+  width: 500px;
+  height: 10px;
 `;
