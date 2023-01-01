@@ -14,6 +14,10 @@ const Index = () => {
     navigate(`/${id}`);
   };
 
+  const onRegister = () => {
+    navigate(`/register`);
+  };
+
   const tempData = {
     id: 999,
     title: "제목입니다.",
@@ -23,10 +27,6 @@ const Index = () => {
     regDt: "2022-12-25",
     comments: 130,
     likes: 2900,
-  };
-
-  const onRegister = () => {
-    console.log("WRITE POST!");
   };
 
   return (
