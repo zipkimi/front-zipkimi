@@ -1,38 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 
-type Reaction = {
-  comments: number;
-  likes: number;
-};
-
-type Info = {
-  writer: string;
-  regDt: string;
-};
-
 type Card = {
+  id: number;
   title: string;
   contents: string;
-  info?: Info;
-  reaction?: Reaction;
+  writer?: string;
+  regDt?: string;
+  comments?: number;
+  likes?: number;
+  onDetail: (id: number) => void;
 };
 
 const Card = (props: Card) => {
-  const { title, contents, info, reaction } = props;
+  const { id, title, contents, writer, regDt, comments, likes, onDetail } =
+    props;
 
   return (
     <Li>
-      <Container href="">
+      <Container type="button" onClick={() => onDetail(id)}>
         <img src="" alt="이미지" />
         <TxtWrapper>
           <strong>{title}</strong>
           <p>{contents}</p>
           <div>
-            {info && <small>{`${info.writer} / ${info.regDt}`}</small>}
-            {reaction && (
-              <small>{`댓글: ${reaction.comments} 좋아요: ${reaction.likes}`}</small>
-            )}
+            {writer && <small>{`${writer} / ${regDt}`}</small>}
+            {comments && <small>{`댓글: ${comments} 좋아요: ${likes}`}</small>}
           </div>
         </TxtWrapper>
       </Container>

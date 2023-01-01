@@ -19,6 +19,6 @@ const Layout = () => {
 export default Layout;
 
 const Wrapper = styled.main`
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
 `;
