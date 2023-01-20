@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Detail = () => {
+const Index = () => {
   return (
     <section>
       <HighlightH2>
@@ -46,7 +46,7 @@ const Detail = () => {
   );
 };
 
-export default Detail;
+export default Index;
 
 const HighlightH2 = styled.h2`
   border-bottom: 1px solid black;

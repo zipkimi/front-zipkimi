@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../../components/Card/Card";
+import Card from "../../../components/Card";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { list } from "../../../mockData";
