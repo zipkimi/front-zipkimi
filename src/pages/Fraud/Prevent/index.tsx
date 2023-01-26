@@ -1,23 +1,12 @@
 import React from "react";
 import Card from "../../../components/Card";
-import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { list } from "../../../mockData";
 import OriginalBtn from "../../../components/OriginalBtn";
+import * as S from "./style";
 
 const Index = () => {
   const navigate = useNavigate();
-
-  // TODO - API 연결
-  //  상세조회를 어느 주소로 보내느냐에 따라 달라짐.
-  const onDetail = (id: number) => {
-    navigate(`/${id}`);
-  };
-
-  const onRegister = () => {
-    navigate(`/register`);
-  };
-
   const tempData = {
     id: 999,
     title: "제목입니다.",
@@ -29,43 +18,28 @@ const Index = () => {
     likes: 2900,
   };
 
+  // TODO - API 연결
+  //  상세조회를 어느 주소로 보내느냐에 따라 달라짐.
+  const onDetail = (id: number) => {
+    navigate(`/${id}`);
+  };
+
+  const onRegister = () => {
+    navigate(`/register`);
+  };
+
   return (
-    <Wrapper>
-      <HiddenH3>사기예방법 공유</HiddenH3>
+    <S.Wrapper>
+      <S.HiddenH3>사기예방법 공유</S.HiddenH3>
       <OriginalBtn onClick={onRegister}>글쓰기</OriginalBtn>
-      <Ul>
+      <S.Ul>
         <Card {...tempData} onDetail={onDetail} />
         {list.map((item, index) => {
           return <Card key={index} onDetail={onDetail} {...item} />;
         })}
-      </Ul>
-    </Wrapper>
+      </S.Ul>
+    </S.Wrapper>
   );
 };
 
 export default Index;
-
-const Wrapper = styled.section`
-  padding: 2rem 2rem;
-  max-width: 800px;
-  margin: auto;
-  @media screen and (max-width: 480px) {
-    padding: 2rem 1rem;
-  }
-
-  > button {
-    float: right;
-  }
-`;
-
-const HiddenH3 = styled.h3`
-  ${({ theme }) => theme.TEXT.hide};
-`;
-
-const Ul = styled.ul`
-  clear: both;
-
-  li:not(li:last-child) {
-    margin-bottom: 1rem;
-  }
-`;
