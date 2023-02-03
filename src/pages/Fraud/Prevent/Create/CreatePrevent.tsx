@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from "react";
 import "react-quill/dist/quill.snow.css";
 import OriginalBtn from "../../../../components/OriginalBtn";
-import * as S from "./style";
+import * as S from "./CreatePrevent.style";
 
-const Index = () => {
+const CreatePrevent = () => {
   const [contents, setContents] = useState("");
   const [title, setTitle] = useState("");
   const [subTitle, setSubTitle] = useState("");
@@ -111,4 +111,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default CreatePrevent;

@@ -8,15 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="481fce54-dd71-4acf-ad8a-5094dbb796c8" name="Changes" comment="[리팩터링] - 관심사 분리 및 폴더 구조 개선">
-      <change afterPath="$PROJECT_DIR$/src/pages/Fraud/Prevent/Detail/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Fraud/Prevent/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Fraud/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/Router.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Fraud/Prevent/Detail/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/Prevent/Detail/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Fraud/Prevent/Create/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/Prevent/Create/CreatePrevent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Fraud/Prevent/Create/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/Prevent/Create/CreatePrevent.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Fraud/Prevent/Detail/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/Prevent/Detail/DetailPrevent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Fraud/Prevent/Detail/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/Prevent/Detail/DetailPrevent.style.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Fraud/Prevent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/Prevent/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Fraud/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/Router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/card.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/card.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +106,14 @@
       <workItem from="1674174614206" duration="647000" />
       <workItem from="1674189049594" duration="668000" />
       <workItem from="1674605428495" duration="598000" />
-      <workItem from="1674692993862" duration="1790000" />
+      <workItem from="1674692993862" duration="3846000" />
+      <workItem from="1674779266464" duration="1878000" />
+      <workItem from="1674909218078" duration="69000" />
+      <workItem from="1675038160857" duration="1805000" />
+      <workItem from="1675124672614" duration="598000" />
+      <workItem from="1675210332202" duration="598000" />
+      <workItem from="1675297351714" duration="3350000" />
+      <workItem from="1675384030020" duration="4412000" />
     </task>
     <task id="LOCAL-00001" summary="프리티어 설치">
       <created>1673592952628</created>
@@ -121,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674189114474</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[리팩터링] - 관심사 분리 및 폴더 구조 개선">
+      <created>1674697249712</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674697249712</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
