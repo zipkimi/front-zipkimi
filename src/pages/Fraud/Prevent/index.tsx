@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { list } from "../../../mockData";
 import OriginalBtn from "../../../components/OriginalBtn";
 import * as S from "./style";
+import { FRAUD } from "../../../const/ROUTES";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const Index = () => {
   };
 
   const onRegister = () => {
-    navigate(`/register`);
+    navigate(FRAUD.CREATE);
   };
 
   return (

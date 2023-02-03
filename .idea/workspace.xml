@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="[리팩터링] - 폴더 및 파일 이름 변경">
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/const/ROUTES.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Fraud/Prevent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/Prevent/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/Router.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -37,7 +41,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "/Users/choyunsik/Documents/CODING/front-safe/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
@@ -51,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675399678680</updated>
-      <workItem from="1675399679841" duration="266000" />
+      <workItem from="1675399679841" duration="2678000" />
     </task>
     <servers />
   </component>

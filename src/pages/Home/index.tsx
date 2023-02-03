@@ -2,9 +2,9 @@ import React from "react";
 
 const Index = () => {
   return (
-    <div>
-      랜딩페이지
-    </div>
+    <>
+      <h2>랜딩페이지</h2>
+    </>
   );
 };
 
