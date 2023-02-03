@@ -1,8 +1,8 @@
 import React from "react";
-import { Card } from "../../types/card";
-import * as S from "./style";
+import { CardProps } from "../../types/card";
+import * as S from "./Card.style";
 
-const Index = (props: Card) => {
+const Card = (props: CardProps) => {
   const { id, title, contents, writer, regDt, comments, likes, onDetail } =
     props;
 
@@ -23,4 +23,4 @@ const Index = (props: Card) => {
   );
 };
 
-export default Index;
+export default Card;

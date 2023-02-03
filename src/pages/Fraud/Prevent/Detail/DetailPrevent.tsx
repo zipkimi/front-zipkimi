@@ -1,7 +1,7 @@
 import React from "react";
-import * as S from "./style";
+import * as S from "./DetailPrevent.style";
 
-const Index = () => {
+const DetailPrevent = () => {
   return (
     <section>
       <S.HighlightH2>
@@ -46,4 +46,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default DetailPrevent;
