@@ -3,7 +3,7 @@ import Card from "../../../components/Card/Card";
 import { useNavigate } from "react-router-dom";
 import { list } from "../../../mockData";
 import OriginalBtn from "../../../components/OriginalBtn";
-import * as S from "./style";
+import * as S from "./index.style";
 import { FRAUD } from "../../../const/ROUTES";
 
 const Index = () => {
@@ -22,7 +22,7 @@ const Index = () => {
   // TODO - API 연결
   //  상세조회를 어느 주소로 보내느냐에 따라 달라짐.
   const onDetail = (id: number) => {
-    navigate(`/${id}`);
+    navigate(`${FRAUD.HOME}/${id}`);
   };
 
   const onRegister = () => {
