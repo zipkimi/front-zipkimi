@@ -1,6 +1,6 @@
 import React from "react";
 import Prevent from "./Prevent";
-import * as S from "./style";
+import * as S from "./index.style";
 
 const Index = () => {
   return (

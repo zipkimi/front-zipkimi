@@ -14,7 +14,12 @@ const COLOR = {
   secondOriginal: "#BB264910",
   white: "#FFFFFF",
   secondWhite: "#AEAEAE",
+  txtInfo: "#5E5E5E",
 };
+
+const SIZE = {
+  info: ".9rem",
+}
 
 const ROUND = {
   xs: "4px",
@@ -27,6 +32,7 @@ const ROUND = {
 const theme = {
   TEXT,
   COLOR,
+  SIZE,
   ROUND,
 };
 
