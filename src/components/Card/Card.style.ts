@@ -13,8 +13,10 @@ export const Li = styled.li`
   }
 `;
 
-export const Container = styled.a`
+export const Container = styled.button`
   display: flex;
+  width: 100%;
+  text-align: left;
   color: black;
 
   img {
@@ -31,6 +33,7 @@ export const TxtWrapper = styled.div`
   flex-direction: column;
   padding: 10px;
   width: 100%;
+  height: 140px;
 
   strong {
     margin-bottom: 20px;
@@ -38,12 +41,13 @@ export const TxtWrapper = styled.div`
   }
 
   > div {
-    margin-top: auto;
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
   }
 
   small {
     font-size: 0.8rem;
+    word-break: break-word;
   }
 `;
