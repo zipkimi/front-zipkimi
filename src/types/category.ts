@@ -6,4 +6,9 @@ export type CategoryItem = {
   contents: string;
 }
 
-export type CategoryProps = CategoryItem & { cateTitle: string };
+type CategoryInfo = {
+  cateTitle: string;
+  catePath: string;
+}
+
+export type CategoryProps = CategoryItem & CategoryInfo;

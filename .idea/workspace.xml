@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 카테고리 컴포넌트 생성, UI 틀 구현">
+    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Category/CateItem.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Category/CateItem.style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Category/CateItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Category/CateItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Category/Category.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Category/Category.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/category.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
       <workItem from="1675399679841" duration="14073000" />
       <workItem from="1675488707279" duration="105000" />
       <workItem from="1675643180392" duration="2469000" />
-      <workItem from="1675729373474" duration="3578000" />
+      <workItem from="1675729373474" duration="4478000" />
     </task>
     <task id="LOCAL-00001" summary="#11 [랜딩페이지] - 라우터 설정">
       <created>1675403022550</created>
@@ -89,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675488795639</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선">
+      <created>1675745267587</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675745267587</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +105,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#11 [랜딩페이지] - 라우터 설정" />
     <MESSAGE value="#11 [랜딩페이지] - 카테고리 컴포넌트 생성, UI 틀 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 카테고리 컴포넌트 생성, UI 틀 구현" />
+    <MESSAGE value="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선" />
   </component>
 </project>
