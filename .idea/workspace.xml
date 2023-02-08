@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 카테고리 컴포넌트 생성, UI 틀 구현">
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/Banner/Banner.style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/Banner/Banner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/Category/CateItem.style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/Category/CateItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/Category/Category.style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/Category/Category.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/index.style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/category.ts" afterDir="false" />
+    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Fraud/Prevent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/Prevent/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Fraud/Prevent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/Prevent/index.style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Fraud/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Fraud/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Fraud/index.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Category/Category.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Category/Category.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/GlobalStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/category.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,21 +42,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/choyunsik/Documents/CODING/front-safe/src/pages/Home",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/choyunsik/Documents/CODING/front-safe/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/choyunsik/Documents/CODING/front-safe/src/pages/Home&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/choyunsik/Documents/CODING/front-safe/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/Home" />
@@ -85,6 +71,9 @@
       <option name="presentableId" value="Default" />
       <updated>1675399678680</updated>
       <workItem from="1675399679841" duration="14073000" />
+      <workItem from="1675488707279" duration="105000" />
+      <workItem from="1675643180392" duration="2469000" />
+      <workItem from="1675729373474" duration="4478000" />
     </task>
     <task id="LOCAL-00001" summary="#11 [랜딩페이지] - 라우터 설정">
       <created>1675403022550</created>
@@ -93,7 +82,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675403022550</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="#11 [랜딩페이지] - 카테고리 컴포넌트 생성, UI 틀 구현">
+      <created>1675488795639</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675488795639</updated>
+    </task>
+    <task id="LOCAL-00003" summary="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선">
+      <created>1675745267587</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675745267587</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +104,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#11 [랜딩페이지] - 라우터 설정" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 라우터 설정" />
+    <MESSAGE value="#11 [랜딩페이지] - 카테고리 컴포넌트 생성, UI 틀 구현" />
+    <MESSAGE value="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선" />
   </component>
 </project>

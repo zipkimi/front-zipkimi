@@ -8,7 +8,7 @@ const CateItem = (props: CategoryItem) => {
 
   return (
     <Card.Li>
-      <S.Container>
+      <S.Container type="button">
         <S.WriterWrapper>
           <div>
             <img src="" alt="프로필" />

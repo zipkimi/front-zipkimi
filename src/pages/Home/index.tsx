@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "./Banner/Banner";
 import Category from "./Category/Category";
 import * as S from "./index.style";
+import { ROUTES, FRAUD } from "../../const/ROUTES";
 
 const Index = () => {
   // TODO - 결과적으로 나중에는 배열 DATA 를 내려줘서 <Category> 내부에서 map 로직을 돌려야겠다.
@@ -18,8 +19,8 @@ const Index = () => {
       <S.HiddenTitleH2>랜딩페이지</S.HiddenTitleH2>
       <Banner/>
       <S.CateWrapper>
-        <Category cateTitle={"사기 예방법"} {...mockCate}/>
-        <Category cateTitle={"커뮤니티"} {...mockCate}/>
+        <Category cateTitle={"사기 예방법"} catePath={FRAUD.HOME} {...mockCate}/>
+        <Category cateTitle={"커뮤니티"} catePath={ROUTES.HOME} {...mockCate}/>
       </S.CateWrapper>
     </>
   );

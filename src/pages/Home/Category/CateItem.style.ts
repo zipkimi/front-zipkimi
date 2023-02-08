@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.a`
+export const Container = styled.button`
   display: block;
+  width: 100%;
   padding: .7rem 1rem;
+  text-align: left;
   
   .font_info {
     font-size: ${({theme}) => theme.SIZE.info};
