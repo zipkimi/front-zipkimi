@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선">
+    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 카테고리 임시 접근 주소 할당">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Category/Category.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Category/Category.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/category.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,8 @@
       <workItem from="1675399679841" duration="14073000" />
       <workItem from="1675488707279" duration="105000" />
       <workItem from="1675643180392" duration="2469000" />
-      <workItem from="1675729373474" duration="4478000" />
+      <workItem from="1675729373474" duration="7429000" />
+      <workItem from="1675902116432" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="#11 [랜딩페이지] - 라우터 설정">
       <created>1675403022550</created>
@@ -96,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675745267587</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="#11 [랜딩페이지] - 카테고리 임시 접근 주소 할당">
+      <created>1675750384569</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675750384569</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +112,7 @@
     <MESSAGE value="#11 [랜딩페이지] - 라우터 설정" />
     <MESSAGE value="#11 [랜딩페이지] - 카테고리 컴포넌트 생성, UI 틀 구현" />
     <MESSAGE value="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선" />
+    <MESSAGE value="#11 [랜딩페이지] - 카테고리 임시 접근 주소 할당" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 카테고리 임시 접근 주소 할당" />
   </component>
 </project>
