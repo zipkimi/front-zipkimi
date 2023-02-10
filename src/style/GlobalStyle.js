@@ -79,6 +79,13 @@ const GlobalStyle = createGlobalStyle`
     display: block;
   }
 
+  // Custom Style
+  .font_info {
+    font-size: ${({ theme }) => theme.SIZE.info};
+    color: ${({ theme }) => theme.COLOR.txtInfo};
+  }
+  
+  // Swiper.js
   .swiper {
     width: 100%;
     height: 100%;

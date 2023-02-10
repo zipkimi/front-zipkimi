@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 카테고리 임시 접근 주소 할당">
+    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - tsconfig 수정">
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPostItem.style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPostItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Category/CateItem.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Category/CateItem.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Category/Category.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Category/Category.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/GlobalStyle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +48,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/choyunsik/Documents/CODING/front-safe/src/pages/Home&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/choyunsik/Documents/CODING/front-safe/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/choyunsik/Documents/CODING/front-safe/src/pages/Home",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/choyunsik/.npm-global/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "/Users/choyunsik/Documents/CODING/front-safe/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/Home" />
@@ -73,6 +83,7 @@
       <workItem from="1675643180392" duration="2469000" />
       <workItem from="1675729373474" duration="7429000" />
       <workItem from="1675902116432" duration="598000" />
+      <workItem from="1675988580718" duration="10327000" />
     </task>
     <task id="LOCAL-00001" summary="#11 [랜딩페이지] - 라우터 설정">
       <created>1675403022550</created>
@@ -114,5 +125,9 @@
     <MESSAGE value="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선" />
     <MESSAGE value="#11 [랜딩페이지] - 카테고리 임시 접근 주소 할당" />
     <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 카테고리 임시 접근 주소 할당" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
