@@ -2,7 +2,7 @@ import styled from "styled-components";
 import * as Card from "../../../components/Card/Card.style";
 
 export const Li = styled(Card.Li)`
-  //max-width: 300px;
+  width: 300px;
   border-radius: ${({ theme }) => theme.ROUND.sm};
   overflow: hidden;
 

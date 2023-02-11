@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - tsconfig 수정">
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPostItem.style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPostItem.tsx" afterDir="false" />
+    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 베스트 글 컴포넌트 구현">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Category/CateItem.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Category/CateItem.style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Category/Category.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Category/Category.style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/GlobalStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPostItem.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPostItem.style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +29,7 @@
         <option value="CHO YUN SIK &lt;postop09@naver.com&gt;" />
       </list>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/choyunsik/Documents/CODING/front-safe/src/pages/Home",
+    "last_opened_file_path": "/Users/choyunsik/Documents/CODING/front-safe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,7 +77,9 @@
       <workItem from="1675643180392" duration="2469000" />
       <workItem from="1675729373474" duration="7429000" />
       <workItem from="1675902116432" duration="598000" />
-      <workItem from="1675988580718" duration="10327000" />
+      <workItem from="1675988580718" duration="13706000" />
+      <workItem from="1676013148368" duration="598000" />
+      <workItem from="1676017594027" duration="725000" />
     </task>
     <task id="LOCAL-00001" summary="#11 [랜딩페이지] - 라우터 설정">
       <created>1675403022550</created>
@@ -113,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675750384569</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="#11 [랜딩페이지] - 베스트 글 컴포넌트 구현">
+      <created>1676006136459</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676006136459</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +127,8 @@
     <MESSAGE value="#11 [랜딩페이지] - 카테고리 컴포넌트 생성, UI 틀 구현" />
     <MESSAGE value="#11 [랜딩페이지] - 목록조회 키보드 접근성 개선" />
     <MESSAGE value="#11 [랜딩페이지] - 카테고리 임시 접근 주소 할당" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 카테고리 임시 접근 주소 할당" />
+    <MESSAGE value="#11 [랜딩페이지] - 베스트 글 컴포넌트 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 베스트 글 컴포넌트 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
