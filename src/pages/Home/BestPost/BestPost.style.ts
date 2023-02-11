@@ -15,7 +15,8 @@ export const Ul = styled.ul`
   padding: 1rem;
   overflow: hidden;
 
-  // Swiper style 가져와서 적용시키는게 더 좋을듯
+  // 커밋테스트
+  // TODO - Swiper style 가져와서 적용시키는게 더 좋을듯
   @media screen and (max-width: 1000px) {
     display: block;
     white-space: nowrap;
