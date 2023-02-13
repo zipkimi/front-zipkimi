@@ -7,6 +7,12 @@ export const Wrapper = styled.section`
     margin-bottom: 1rem;
     font-size: 1.2rem;
   }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
 `;
 
 export const Ul = styled.ul`
