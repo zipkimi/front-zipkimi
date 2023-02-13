@@ -7,13 +7,13 @@ import * as S from "./Banner.style";
 
 const Banner = () => {
   const SLIDE_LIST = [
-    {src: "", alt: "1번 슬라이드 😡"},
-    {src: "", alt: "2번 슬라이드 🤢"},
-    {src: "", alt: "3번 슬라이드 🥶"},
-  ]
+    { src: "", alt: "1번 슬라이드 😡" },
+    { src: "", alt: "2번 슬라이드 🤢" },
+    { src: "", alt: "3번 슬라이드 🥶" },
+  ];
 
   return (
-    <section>
+    <S.BannerWrapper>
       <S.HiddenTitle>배너</S.HiddenTitle>
       <Swiper
         modules={[Autoplay, Pagination]}
@@ -25,17 +25,15 @@ const Banner = () => {
         }}
         className="mySwiper"
       >
-        {
-          SLIDE_LIST.map((slide) => {
-            return (
-              <SwiperSlide key={slide.alt}>
-                <S.SlideImg src={slide.src} alt={slide.alt} />
-              </SwiperSlide>
-            )
-          })
-        }
+        {SLIDE_LIST.map((slide) => {
+          return (
+            <SwiperSlide key={slide.alt}>
+              <S.SlideImg src={slide.src} alt={slide.alt} />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
-    </section>
+    </S.BannerWrapper>
   );
 };
 

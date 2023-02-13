@@ -3,24 +3,19 @@ import styled from "styled-components";
 export const Container = styled.button`
   display: block;
   width: 100%;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   text-align: left;
-  
-  .font_info {
-    font-size: ${({theme}) => theme.SIZE.info};
-    color: ${({theme}) => theme.COLOR.txtInfo};
-  }
 `;
 
 export const WriterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   > div {
     display: flex;
     align-items: center;
-    
+
     img {
       display: inline-block;
       border-radius: 50%;
@@ -39,15 +34,15 @@ export const WriterWrapper = styled.div`
 
 export const Dl = styled.dl`
   display: flex;
-  gap: .5rem;
-  
+  gap: 0.5rem;
+
   div {
     display: flex;
   }
   dt {
     margin-right: 5px;
   }
-`
+`;
 
 export const Contents = styled.p`
   display: -webkit-box;
@@ -56,4 +51,4 @@ export const Contents = styled.p`
   text-overflow: ellipsis;
   overflow: hidden;
   margin-top: 10px;
-`
+`;
