@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 베스트 글 컴포넌트 스타일 테스트">
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
