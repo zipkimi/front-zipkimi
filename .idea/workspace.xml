@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 베스트 글 컴포넌트 스타일 테스트">
+    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 베스트글 - swiper 적용 및 반응형 구현">
+      <changelist_data name="CHO YUN SIK" email="postop09@naver.com" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/BestPost/BestPost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676106278072</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="#11 [랜딩페이지] - 베스트글 - swiper 적용 및 반응형 구현">
+      <created>1676350226770</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676350226770</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +144,8 @@
     <MESSAGE value="#11 [랜딩페이지] - 카테고리 임시 접근 주소 할당" />
     <MESSAGE value="#11 [랜딩페이지] - 베스트 글 컴포넌트 구현" />
     <MESSAGE value="#11 [랜딩페이지] - 베스트 글 컴포넌트 스타일 테스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 베스트 글 컴포넌트 스타일 테스트" />
+    <MESSAGE value="#11 [랜딩페이지] - 베스트글 - swiper 적용 및 반응형 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 베스트글 - swiper 적용 및 반응형 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
