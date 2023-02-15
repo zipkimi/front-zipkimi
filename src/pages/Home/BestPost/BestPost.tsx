@@ -9,7 +9,18 @@ const BestPost = () => {
     <S.Wrapper>
       <h3>중요/공유/베스트 글</h3>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
+        breakpoints={{
+          540: {
+            slidesPerView: 2,
+          },
+          800: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+        }}
         pagination={{ clickable: true }}
         modules={[Pagination]}
         className="mySwiper"
