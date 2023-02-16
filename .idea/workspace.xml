@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 베스트글 - swiper 적용 및 반응형 구현">
-      <changelist_data name="CHO YUN SIK" email="postop09@naver.com" />
+    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 게시글 - swiper 적용 및 반응형 구현">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +81,8 @@
       <workItem from="1676013148368" duration="598000" />
       <workItem from="1676017594027" duration="725000" />
       <workItem from="1676106220539" duration="168000" />
+      <workItem from="1676420773226" duration="598000" />
+      <workItem from="1676507649466" duration="1777000" />
     </task>
     <task id="LOCAL-00001" summary="#11 [랜딩페이지] - 라우터 설정">
       <created>1675403022550</created>
@@ -131,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676350226770</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="#11 [랜딩페이지] - 게시글 - swiper 적용 및 반응형 구현">
+      <created>1676350477914</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676350477914</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +154,8 @@
     <MESSAGE value="#11 [랜딩페이지] - 베스트 글 컴포넌트 구현" />
     <MESSAGE value="#11 [랜딩페이지] - 베스트 글 컴포넌트 스타일 테스트" />
     <MESSAGE value="#11 [랜딩페이지] - 베스트글 - swiper 적용 및 반응형 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 베스트글 - swiper 적용 및 반응형 구현" />
+    <MESSAGE value="#11 [랜딩페이지] - 게시글 - swiper 적용 및 반응형 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 [랜딩페이지] - 게시글 - swiper 적용 및 반응형 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
