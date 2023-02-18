@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "./Banner/Banner";
 import Category from "./Category/Category";
 import * as S from "./index.style";
-import { ROUTES, FRAUD } from "../../const/ROUTES";
+import { FRAUD, ROUTES } from "../../const/ROUTES";
 import BestPost from "./BestPost/BestPost";
 
 const Index = () => {
@@ -12,17 +12,22 @@ const Index = () => {
     regDt: "1",
     likeCount: 0,
     CommentCount: 0,
-    contents: "겨울이 없다면 봄은 그리 즐겁지 않을 것이다. 고난을 맛보지 않으면 성공이 반갑지 않을 것이다.",
-  }
+    contents:
+      "겨울이 없다면 봄은 그리 즐겁지 않을 것이다. 고난을 맛보지 않으면 성공이 반갑지 않을 것이다.",
+  };
 
   return (
     <>
       <S.HiddenTitleH2>랜딩페이지</S.HiddenTitleH2>
-      <Banner/>
-      <BestPost/>
+      <Banner />
+      <BestPost />
       <S.CateWrapper>
-        <Category cateTitle={"사기 예방법"} catePath={FRAUD.HOME} {...mockCate}/>
-        <Category cateTitle={"커뮤니티"} catePath={ROUTES.HOME} {...mockCate}/>
+        <Category
+          cateTitle={"사기 예방법"}
+          catePath={FRAUD.HOME}
+          {...mockCate}
+        />
+        <Category cateTitle={"커뮤니티"} catePath={ROUTES.HOME} {...mockCate} />
       </S.CateWrapper>
     </>
   );
