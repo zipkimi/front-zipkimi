@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [랜딩페이지] - 베스트 글 컴포넌트 스타일 수정">
+    <list default="true" id="cdcfcc07-f21d-4ae6-b92a-d1a797aa7536" name="Changes" comment="#11 [환경설정] - axios api 호출 모듈화">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/API.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/axios.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +64,7 @@
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/Home" />
@@ -119,6 +122,37 @@
       <workItem from="1676507649466" duration="5745000" />
       <workItem from="1676592784106" duration="2772000" />
       <workItem from="1676880911773" duration="67000" />
+      <workItem from="1676592784106" duration="5511000" />
+      <workItem from="1676854607291" duration="23000" />
+      <workItem from="1676867751144" duration="664000" />
+      <workItem from="1676952281457" duration="2122000" />
+      <workItem from="1677025850542" duration="1200000" />
+      <workItem from="1677110598202" duration="598000" />
+      <workItem from="1677199322926" duration="1604000" />
+      <workItem from="1677457841395" duration="598000" />
+      <workItem from="1677542468082" duration="1008000" />
+      <workItem from="1677715374625" duration="598000" />
+      <workItem from="1677802927804" duration="1903000" />
+      <workItem from="1678062429047" duration="598000" />
+      <workItem from="1678148897604" duration="598000" />
+      <workItem from="1678151913885" duration="11000" />
+      <workItem from="1678152063426" duration="598000" />
+      <workItem from="1678168769593" duration="71000" />
+      <workItem from="1678169017376" duration="598000" />
+      <workItem from="1678236133250" duration="1198000" />
+      <workItem from="1678320414370" duration="598000" />
+      <workItem from="1678407850126" duration="1344000" />
+      <workItem from="1678446665098" duration="598000" />
+      <workItem from="1678753320703" duration="2398000" />
+      <workItem from="1678840243089" duration="598000" />
+      <workItem from="1678927366046" duration="1287000" />
+      <workItem from="1679011842069" duration="653000" />
+      <workItem from="1679285018188" duration="598000" />
+      <workItem from="1679356757226" duration="598000" />
+      <workItem from="1679443010224" duration="2068000" />
+      <workItem from="1679531231183" duration="3333000" />
+      <workItem from="1679616245396" duration="598000" />
+      <workItem from="1679876652165" duration="2151000" />
     </task>
     <task id="LOCAL-00001" summary="#11 [랜딩페이지] - 라우터 설정">
       <created>1675403022550</created>
@@ -183,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676522047395</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="#11 [환경설정] - axios api 호출 모듈화">
+      <created>1676608852471</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676608852471</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +251,8 @@
     <MESSAGE value="#11 [랜딩페이지] - 베스트글 - swiper 적용 및 반응형 구현" />
     <MESSAGE value="#11 [랜딩페이지] - 게시글 - swiper 적용 및 반응형 구현" />
     <MESSAGE value="#11 [환경설정] - axios, react-query 의존성 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 [환경설정] - axios, react-query 의존성 추가" />
+    <MESSAGE value="#11 [환경설정] - axios api 호출 모듈화" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 [환경설정] - axios api 호출 모듈화" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
