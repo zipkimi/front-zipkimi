@@ -3,7 +3,7 @@ import axios from "axios";
 type AxiosMethod = "get" | "post" | "put" | "patch" | "delete";
 
 const api = axios.create({
-  baseURL: "www.safein.care:8080",
+  baseURL: "http://www.safein.care:8080",
 });
 
 const apiRequest = async (
