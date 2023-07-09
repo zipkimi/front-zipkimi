@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { useForm } from "react-hook-form";
 
-const InputForm = () => {
-  const [value, setValue] = useState("");
+const InputForm = (props: any) => {
   const [isReset, setIsReset] = useState(false);
   const [isHide, setIsHide] = useState(true);
   const [isValid, setIsValid] = useState(false);
+  const {
+    formState: { errors },
+  } = useForm();
 
   const handleFocus = () => {
     setIsReset(true);
@@ -14,49 +17,47 @@ const InputForm = () => {
 
   const handleBlur = () => {
     setIsReset(false);
-    if (value) {
+    if (!errors.email) {
       setIsValid(true);
     }
   };
 
-  // TODO - 패턴 props 전달
-  const validateEmail = (email: string) => {
-    const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return pattern.test(email);
-  };
-
-  const handleChange = (value: string) => {
-    setValue(value);
-
-    console.log(validateEmail(value));
-  };
-
+  // @ts-ignore
+  // @ts-ignore
   return (
-    <InputWrapper onFocus={handleFocus} onBlur={handleBlur} isFocus={isReset}>
-      <Input
-        type={isHide ? "password" : "text"}
-        onChange={(e) => handleChange(e.target.value)}
-        value={value}
-        placeholder={"영문, 숫자 조합 8 ~ 16자"}
-        required={true}
-      />
-      <BtnWrapper>
-        <CloseBtn type="button" isShow={isReset} onClick={() => setValue("")}>
-          <Img src={require("../assets/icon/icon_clear.png")} alt="삭제" />
-        </CloseBtn>
-        {isValid && (
-          <ImgCheck src={require("../assets/icon/icon_check.png")} alt="삭제" />
-        )}
-        <ShowBtn type="button" onClick={() => setIsHide((prev) => !prev)}>
-          {isHide && (
-            <Img src={require("../assets/icon/icon_eye_off.png")} alt="삭제" />
+    <>
+      <InputWrapper onFocus={handleFocus} onBlur={handleBlur} isFocus={isReset}>
+        <Input
+          type={isHide ? "password" : "text"}
+          placeholder={"영문, 숫자 조합 8 ~ 16자"}
+          {...props.register}
+        />
+        <BtnWrapper>
+          <CloseBtn type="reset" isShow={isReset}>
+            <Img src={require("../assets/icon/icon_clear.png")} alt="삭제" />
+          </CloseBtn>
+          {isValid && (
+            <ImgCheck
+              src={require("../assets/icon/icon_check.png")}
+              alt="완료"
+            />
           )}
-          {!isHide && (
-            <Img src={require("../assets/icon/icon_eye_on.png")} alt="삭제" />
-          )}
-        </ShowBtn>
-      </BtnWrapper>
-    </InputWrapper>
+          <ShowBtn type="button" onClick={() => setIsHide((prev) => !prev)}>
+            {isHide && (
+              <Img
+                src={require("../assets/icon/icon_eye_off.png")}
+                alt="삭제"
+              />
+            )}
+            {!isHide && (
+              <Img src={require("../assets/icon/icon_eye_on.png")} alt="삭제" />
+            )}
+          </ShowBtn>
+        </BtnWrapper>
+      </InputWrapper>
+      {/* @ts-ignore */}
+      {errors.email && <small>{errors?.email?.message}</small>}
+    </>
   );
 };
 
@@ -69,8 +70,7 @@ const InputWrapper = styled.form<{ isFocus: boolean }>`
       return `outline: 2px solid blue;`;
     }
   }}
-
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 `;
 
 const Input = styled.input`
@@ -108,4 +108,8 @@ const Img = styled.img`
 const ImgCheck = styled.img`
   width: 18px;
   height: 13px;
+`;
+
+const ErrTxt = styled.p`
+  color: #3a00e5;
 `;
