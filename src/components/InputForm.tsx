@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { useForm } from "react-hook-form";
+import EYE_OFF from "../assets/icon/icon_eye_off.png";
+import EYE_ON from "../assets/icon/icon_eye_on.png";
 
 const InputForm = (props: any) => {
+  const { fieldName, errors, reset, watch, placeholder } = props;
   const [isReset, setIsReset] = useState(false);
   const [isHide, setIsHide] = useState(true);
   const [isValid, setIsValid] = useState(false);
-  const {
-    formState: { errors },
-  } = useForm();
+  const value = watch(fieldName);
+  const isPw = fieldName === "password";
 
   const handleFocus = () => {
     setIsReset(true);
@@ -17,63 +18,61 @@ const InputForm = (props: any) => {
 
   const handleBlur = () => {
     setIsReset(false);
-    if (!errors.email) {
+    if (!errors[fieldName] && value !== "") {
       setIsValid(true);
     }
   };
 
-  // @ts-ignore
-  // @ts-ignore
+  const handleReset = () => {
+    reset({ [fieldName]: "" });
+  };
+
   return (
     <>
       <InputWrapper onFocus={handleFocus} onBlur={handleBlur} isFocus={isReset}>
         <Input
-          type={isHide ? "password" : "text"}
-          placeholder={"영문, 숫자 조합 8 ~ 16자"}
+          type={isPw && isHide ? "password" : "text"}
+          placeholder={placeholder}
+          isError={errors[fieldName]}
           {...props.register}
         />
         <BtnWrapper>
-          <CloseBtn type="reset" isShow={isReset}>
+          <CloseBtn type="button" isShow={isReset} onClick={handleReset}>
             <Img src={require("../assets/icon/icon_clear.png")} alt="삭제" />
           </CloseBtn>
-          {isValid && (
+          {isValid && !errors[fieldName] && (
             <ImgCheck
               src={require("../assets/icon/icon_check.png")}
               alt="완료"
             />
           )}
-          <ShowBtn type="button" onClick={() => setIsHide((prev) => !prev)}>
-            {isHide && (
-              <Img
-                src={require("../assets/icon/icon_eye_off.png")}
-                alt="삭제"
-              />
-            )}
-            {!isHide && (
-              <Img src={require("../assets/icon/icon_eye_on.png")} alt="삭제" />
-            )}
-          </ShowBtn>
+          {isPw && (
+            <ShowBtn type="button" onClick={() => setIsHide((prev) => !prev)}>
+              <Img src={isHide ? EYE_OFF : EYE_ON} alt="비밀번호 가리기" />
+            </ShowBtn>
+          )}
+          {!isPw && <LayoutBox></LayoutBox>}
         </BtnWrapper>
       </InputWrapper>
       {/* @ts-ignore */}
-      {errors.email && <small>{errors?.email?.message}</small>}
+      {errors[fieldName] && <ErrTxt>*{errors[fieldName]?.message}</ErrTxt>}
     </>
   );
 };
 
 export default InputForm;
 
-const InputWrapper = styled.form<{ isFocus: boolean }>`
+const InputWrapper = styled.div<{ isFocus: boolean }>`
   position: relative;
   ${(props) => {
     if (props.isFocus) {
       return `outline: 2px solid blue;`;
     }
   }}
-  margin-bottom: .5rem;
 `;
 
-const Input = styled.input`
+const Input = styled.input<{ isError: boolean }>`
+  border: 1px solid ${({ isError }) => (isError ? "#3a00e5" : "inherit")};
   width: 100%;
   height: 48px;
   padding: 14px 16px;
@@ -96,6 +95,11 @@ const CloseBtn = styled.button<{ isShow: boolean }>`
   cursor: ${({ isShow }) => (isShow ? "pointer" : "default")};
 `;
 
+const LayoutBox = styled.div`
+  width: 20px;
+  height: 20px;
+`;
+
 const ShowBtn = styled.button`
   z-index: 10;
 `;
@@ -111,5 +115,6 @@ const ImgCheck = styled.img`
 `;
 
 const ErrTxt = styled.p`
+  margin-top: 0.3rem;
   color: #3a00e5;
 `;
