@@ -6,6 +6,7 @@ import DetailPrevent from "../pages/Fraud/Prevent/Detail/DetailPrevent";
 import CreatePrevent from "../pages/Fraud/Prevent/Create/CreatePrevent";
 import Home from "../pages/Home";
 import { FRAUD, ROUTES } from "../const/ROUTES";
+import NewAccount from "../pages/NewAccount";
 
 const Router = () => {
   return (
@@ -13,8 +14,10 @@ const Router = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route path={ROUTES.HOME} element={<Home />} />
+          <Route path={ROUTES.NEW} element={<NewAccount />} />
           <Route path={FRAUD.HOME} element={<Fraud />} />
           <Route path={FRAUD.DETAIL} element={<DetailPrevent />} />
+          <Route path={FRAUD.CREATE} element={<CreatePrevent />} />
           <Route path={FRAUD.CREATE} element={<CreatePrevent />} />
         </Route>
       </Routes>

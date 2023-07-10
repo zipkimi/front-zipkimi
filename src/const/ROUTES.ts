@@ -1,5 +1,7 @@
 export const ROUTES = {
   HOME: "/",
+  LOGIN: "/login",
+  NEW: "/new",
 };
 
 export const FRAUD = {
