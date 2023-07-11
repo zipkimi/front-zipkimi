@@ -4,7 +4,6 @@ import Category from "./Category/Category";
 import * as S from "./index.style";
 import { FRAUD, ROUTES } from "../../const/ROUTES";
 import BestPost from "./BestPost/BestPost";
-import InputForm from "../../components/InputForm";
 
 const Index = () => {
   // TODO - 결과적으로 나중에는 배열 DATA 를 내려줘서 <Category> 내부에서 map 로직을 돌려야겠다.
@@ -20,7 +19,6 @@ const Index = () => {
   return (
     <>
       <S.HiddenTitleH2>랜딩페이지</S.HiddenTitleH2>
-      <InputForm />
       <Banner />
       <BestPost />
       <S.CateWrapper>

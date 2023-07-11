@@ -6,10 +6,10 @@ import OriginalBtn from "../OriginalBtn";
 const Header = () => {
   return (
     <HeaderWrapper>
-      <h1><img src={require('../../../src/temp_img.jpg')} alt="임시로고"/></h1>
-      <Nav>메뉴1 메뉴2 메뉴3 메뉴4 메뉴5</Nav>
-      <Div>커밋용</Div>
-      <Li>커밋용2</Li>
+      {/*<h1><img src={require('../../../src/temp_img.jpg')} alt="임시로고"/></h1>*/}
+      {/*<Nav>메뉴1 메뉴2 메뉴3 메뉴4 메뉴5</Nav>*/}
+      {/*<Div>커밋용</Div>*/}
+      {/*<Li>커밋용2</Li>*/}
     </HeaderWrapper>
   );
 };
@@ -21,7 +21,7 @@ const HeaderWrapper = styled.header`
   width: 1100px;
   height: 35px;
   line-height: 35px;
-  display:flex;
+  display: flex;
 `;
 
 const H1 = styled.h1`
@@ -52,5 +52,5 @@ const Div = styled.div`
 `;
 
 const Li = styled.li`
-  text-align:center;
-`
+  text-align: center;
+`;
