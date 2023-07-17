@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const InputWrapper = styled.div<{ isFocus: boolean }>`
   position: relative;
   border-radius: ${({ theme }) => theme.ROUND.sm};
+  width: 100%;
   ${(props) => {
     if (props.isFocus) {
       return `outline: 2px solid blue;`;
@@ -10,7 +11,7 @@ export const InputWrapper = styled.div<{ isFocus: boolean }>`
   }}
 `;
 
-export const Input = styled.input<{ isError: boolean }>`
+export const Input = styled.input<{ isError?: boolean }>`
   border: 1px solid ${({ isError }) => (isError ? "#3a00e5" : "inherit")};
   border-radius: ${({ theme }) => theme.ROUND.sm};
   width: 100%;

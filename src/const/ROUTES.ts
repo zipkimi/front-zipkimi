@@ -2,6 +2,8 @@ export const ROUTES = {
   HOME: "/",
   LOGIN: "/login",
   NEW: "/new",
+  SUCCESS: "/success",
+  SNS: "/sns",
 };
 
 export const FRAUD = {

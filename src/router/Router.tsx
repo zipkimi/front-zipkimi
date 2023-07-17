@@ -6,7 +6,9 @@ import DetailPrevent from "../pages/Fraud/Prevent/Detail/DetailPrevent";
 import CreatePrevent from "../pages/Fraud/Prevent/Create/CreatePrevent";
 import Home from "../pages/Home";
 import { FRAUD, ROUTES } from "../const/ROUTES";
-import NewAccount from "../pages/NewAccount";
+import NewAccount from "../pages/newAccount";
+import Success from "../pages/success";
+import Sns from "../pages/sns";
 
 const Router = () => {
   return (
@@ -15,6 +17,8 @@ const Router = () => {
         <Route element={<Layout />}>
           <Route path={ROUTES.HOME} element={<Home />} />
           <Route path={ROUTES.NEW} element={<NewAccount />} />
+          <Route path={ROUTES.SUCCESS} element={<Success />} />
+          <Route path={ROUTES.SNS} element={<Sns />} />
           <Route path={FRAUD.HOME} element={<Fraud />} />
           <Route path={FRAUD.DETAIL} element={<DetailPrevent />} />
           <Route path={FRAUD.CREATE} element={<CreatePrevent />} />
