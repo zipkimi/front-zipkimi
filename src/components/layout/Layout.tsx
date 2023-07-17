@@ -7,7 +7,7 @@ import styled from "styled-components";
 const Layout = () => {
   return (
     <>
-      <Header />
+      {/*<Header />*/}
       <Wrapper>
         <Outlet />
       </Wrapper>

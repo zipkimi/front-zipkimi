@@ -10,18 +10,20 @@ const TEXT = {
 };
 
 const COLOR = {
-  original: "#BB2649",
-  secondOriginal: "#BB264910",
-  white: "#FFFFFF",
+  original: "#3A00E5",
+  originalBright: "#3A00E545",
+  originalHover: "#3A00E555",
+  originalDisabled: "#3A00E520",
   secondWhite: "#AEAEAE",
   txtInfo: "#5E5E5E",
 };
 
 const SIZE = {
   info: ".9rem",
-}
+};
 
 const ROUND = {
+  none: "0",
   xs: "4px",
   sm: "8px",
   md: "16px",

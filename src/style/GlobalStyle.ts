@@ -78,12 +78,6 @@ const GlobalStyle = createGlobalStyle`
   img {
     display: block;
   }
-
-  // Custom Style
-  .font_info {
-    font-size: ${({ theme }) => theme.SIZE.info};
-    color: ${({ theme }) => theme.COLOR.txtInfo};
-  }
 `;
 
 export default GlobalStyle;
