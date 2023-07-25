@@ -15,16 +15,24 @@ interface Props extends InputHTMLAttributes<any> {
   watch: any;
 }
 
-const ZInput = (props: Props) => {
+const ZInput2 = (props: Props) => {
   const { register, fieldName, errors, reset, watch } = props;
+  const [isHide, setIsHide] = useState(true);
   const [isReset, setIsReset] = useState(false);
+  const [isValid, setIsValid] = useState(false);
+  const value = watch(fieldName);
+  const isPw = fieldName === "password" || fieldName === "rePassword";
 
   const handleFocus = () => {
     setIsReset(true);
+    setIsValid(false);
   };
 
   const handleBlur = () => {
     setIsReset(false);
+    if (!errors[fieldName] && value !== "") {
+      setIsValid(true);
+    }
   };
 
   const handleReset = () => {
@@ -38,7 +46,12 @@ const ZInput = (props: Props) => {
         onBlur={handleBlur}
         isFocus={isReset}
       >
-        <S.Input {...props} isError={errors[fieldName]} {...register} />
+        <S.Input
+          type={isPw && isHide ? "password" : "text"}
+          {...props}
+          isError={errors[fieldName]}
+          {...register}
+        />
         <S.BtnWrapper>
           <S.CloseBtn type="button" isShow={isReset} onClick={handleReset}>
             <S.Img
@@ -46,6 +59,18 @@ const ZInput = (props: Props) => {
               alt="삭제"
             />
           </S.CloseBtn>
+          {isValid && !errors[fieldName] && (
+            <S.ImgCheck
+              src={require("../../assets/icon/icon_check.png")}
+              alt="완료"
+            />
+          )}
+          {!isPw && <S.LayoutBox></S.LayoutBox>}
+          {isPw && (
+            <S.ShowBtn type="button" onClick={() => setIsHide((prev) => !prev)}>
+              <S.Img src={isHide ? EYE_OFF : EYE_ON} alt="비밀번호 가리기" />
+            </S.ShowBtn>
+          )}
         </S.BtnWrapper>
       </S.InputWrapper>
       {errors[fieldName] && <S.ErrTxt>*{errors[fieldName]?.message}</S.ErrTxt>}
@@ -53,4 +78,4 @@ const ZInput = (props: Props) => {
   );
 };
 
-export default ZInput;
+export default ZInput2;

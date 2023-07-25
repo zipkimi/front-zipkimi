@@ -1,8 +1,8 @@
 import React from "react";
-import ZInput from "../../components/ZInput/ZInput";
+import ZInput2 from "../../components/ZInput2/ZInput2";
 import { useForm } from "react-hook-form";
 import InputLayout from "../../components/InputLayout/InputLayout";
-import ZButton from "../../components/ZButton/ZButton";
+import ZButton from "../../components/ZButton2/ZButton";
 import styled from "styled-components";
 import { BodyStyle } from "../../style/style";
 
@@ -61,7 +61,7 @@ const Index = () => {
         <BodyStyle>
           <div>
             <InputLayout htmlFor={"email"} label={"아이디"}>
-              <ZInput
+              <ZInput2
                 id={"email"}
                 register={emailRegister}
                 fieldName={"email"}
@@ -72,7 +72,7 @@ const Index = () => {
               />
             </InputLayout>
             <InputLayout htmlFor={"password"} label={"비밀번호"}>
-              <ZInput
+              <ZInput2
                 register={pwRegister}
                 fieldName={"password"}
                 errors={errors}
@@ -82,7 +82,7 @@ const Index = () => {
               />
             </InputLayout>
             <InputLayout htmlFor={"rePassword"} label={"비밀번호 재확인"}>
-              <ZInput
+              <ZInput2
                 register={rePwRegister}
                 fieldName={"rePassword"}
                 errors={errors}
@@ -92,7 +92,7 @@ const Index = () => {
               />
             </InputLayout>
             <InputLayout htmlFor={"name"} label={"이름"}>
-              <ZInput
+              <ZInput2
                 register={nameRegister}
                 fieldName={"name"}
                 errors={errors}

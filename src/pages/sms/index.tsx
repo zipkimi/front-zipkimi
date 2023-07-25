@@ -1,9 +1,9 @@
 import React from "react";
 import InputLayout from "../../components/InputLayout/InputLayout";
-import ZInput from "../../components/ZInput/ZInput";
+import ZInput2 from "../../components/ZInput2/ZInput2";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
-import ZButton from "../../components/ZButton/ZButton";
+import ZButton from "../../components/ZButton2/ZButton";
 
 const Index = () => {
   const { reset, watch, handleSubmit } = useForm();
@@ -19,7 +19,7 @@ const Index = () => {
         <InputLayout htmlFor={"phone"} label={"휴대폰 번호"}>
           <Wrapper>
             <Input type="text" defaultValue={"+82"} />
-            <ZInput
+            <ZInput2
               fieldName={"phone"}
               errors={"휴대폰 번호를 입력해주세요."}
               reset={reset}
@@ -29,7 +29,7 @@ const Index = () => {
         </InputLayout>
       </Form>
       <InputLayout htmlFor={"authNum"} label={"인증번호"}>
-        <ZInput
+        <ZInput2
           fieldName={"authNum"}
           errors={"인증번호를 정확히 입력해주세요."}
           reset={reset}

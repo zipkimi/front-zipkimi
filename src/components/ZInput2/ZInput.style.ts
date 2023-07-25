@@ -2,26 +2,23 @@ import styled from "styled-components";
 
 export const InputWrapper = styled.div<{ isFocus: boolean }>`
   position: relative;
-  border-radius: ${({ theme }) => theme.ROUND.xs};
+  border-radius: ${({ theme }) => theme.ROUND.sm};
   width: 100%;
   ${(props) => {
     if (props.isFocus) {
-      return `outline: 1px solid blue;`;
+      return `outline: 2px solid blue;`;
     }
   }}
 `;
 
 export const Input = styled.input<{ isError?: boolean }>`
-  border: 1px solid ${({ isError }) => (isError ? "#3a00e5" : "black")};
-  border-radius: ${({ theme }) => theme.ROUND.xs};
+  border: 1px solid ${({ isError }) => (isError ? "#3a00e5" : "inherit")};
+  border-radius: ${({ theme }) => theme.ROUND.sm};
   width: 100%;
   height: 48px;
   padding: 14px 16px;
   font-size: 1rem;
   outline: none;
-  &::placeholder {
-    color: lightgray;
-  }
 `;
 
 export const BtnWrapper = styled.div`
@@ -59,7 +56,6 @@ export const ImgCheck = styled.img`
 `;
 
 export const ErrTxt = styled.p`
-  position: absolute;
   margin-top: 0.3rem;
   color: #3a00e5;
 `;

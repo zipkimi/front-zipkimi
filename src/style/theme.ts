@@ -10,10 +10,10 @@ const TEXT = {
 };
 
 const COLOR = {
-  original: "#3A00E5",
+  original: "#405b9e",
   originalBright: "#3A00E545",
   originalHover: "#3A00E555",
-  originalDisabled: "#3A00E520",
+  originalDisabled: "#405b9e60",
   secondWhite: "#AEAEAE",
   txtInfo: "#5E5E5E",
 };

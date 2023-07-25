@@ -3,7 +3,7 @@ export const ROUTES = {
   LOGIN: "/login",
   NEW: "/new",
   SUCCESS: "/success",
-  SNS: "/sns",
+  SMS: "/sms",
 };
 
 export const FRAUD = {
