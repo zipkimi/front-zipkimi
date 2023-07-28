@@ -15,7 +15,7 @@ const COLOR = {
   originalHover: "#3A00E555",
   originalDisabled: "#405b9e60",
   secondWhite: "#AEAEAE",
-  txtInfo: "#5E5E5E",
+  txtInfo: "#808080",
 };
 
 const SIZE = {

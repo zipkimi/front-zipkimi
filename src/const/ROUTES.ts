@@ -1,9 +1,10 @@
 export const ROUTES = {
   HOME: "/",
   LOGIN: "/login",
-  NEW: "/new",
+  SIGNUP: "/signup",
   SUCCESS: "/success",
-  SMS: "/sms",
+  FIND_ID: "/find-id",
+  FIND_PW: "/find-pw",
 };
 
 export const FRAUD = {

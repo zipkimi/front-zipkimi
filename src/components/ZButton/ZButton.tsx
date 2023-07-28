@@ -10,7 +10,7 @@ interface Props extends ButtonHTMLAttributes<any> {
 }
 
 const ZButton = (props: Props) => {
-  let { color = "original", isRound = "sm", height = 48 } = props;
+  let { color = "original", isRound = "xs", height = 48 } = props;
 
   if (props.disabled) {
     color = "originalDisabled";

@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import OriginalBtn from "../OriginalBtn";
-// import companylogo from '../../../src/temp_img.jpg'
 
 const Header = () => {
   return (

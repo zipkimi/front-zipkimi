@@ -8,3 +8,11 @@ export const BodyStyle = styled.div`
   flex-direction: column;
   justify-content: space-between;
 `;
+
+export const ContentsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  height: 100%;
+`;

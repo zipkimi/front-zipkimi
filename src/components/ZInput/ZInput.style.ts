@@ -39,23 +39,9 @@ export const CloseBtn = styled.button<{ isShow: boolean }>`
   cursor: ${({ isShow }) => (isShow ? "pointer" : "default")};
 `;
 
-export const LayoutBox = styled.div`
-  width: 20px;
-  height: 20px;
-`;
-
-export const ShowBtn = styled.button`
-  z-index: 10;
-`;
-
 export const Img = styled.img`
   width: 20px;
   height: 20px;
-`;
-
-export const ImgCheck = styled.img`
-  width: 18px;
-  height: 13px;
 `;
 
 export const ErrTxt = styled.p`
