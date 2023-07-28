@@ -6,9 +6,3 @@ export const ROUTES = {
   FIND_ID: "/find-id",
   FIND_PW: "/find-pw",
 };
-
-export const FRAUD = {
-  HOME: "/fraud",
-  CREATE: "/fraud/create",
-  DETAIL: "/fraud/:id",
-};

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "../components/layout/Layout";
+import Layout from "../components/Layout/Layout";
 import { ROUTES } from "../const/ROUTES";
 import NewAccount from "../pages/signUp";
 import Success from "../pages/success";

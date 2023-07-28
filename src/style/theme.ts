@@ -20,6 +20,7 @@ const COLOR = {
 
 const SIZE = {
   info: ".9rem",
+  xl: "2rem",
 };
 
 const ROUND = {

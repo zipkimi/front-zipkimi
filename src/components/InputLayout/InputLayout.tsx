@@ -1,17 +1,17 @@
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import Required from "../Required";
 import styled from "styled-components";
 
-type Props = {
+interface Props extends HTMLAttributes<any> {
   htmlFor: string;
   label: string | React.ReactNode;
   required?: boolean;
   children: React.ReactNode;
-};
+}
 
-const InputForm = ({ htmlFor, label, required, children }: Props) => {
+const InputForm = ({ htmlFor, label, required, children, ...props }: Props) => {
   return (
-    <div>
+    <div {...props}>
       <Label htmlFor={htmlFor}>
         {label}
         {required && <Required />}
