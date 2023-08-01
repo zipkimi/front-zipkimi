@@ -8,9 +8,7 @@ export const Title = styled.h2`
 
 export const Logo = styled.img`
   display: inline-block;
-  border: 1px solid black;
-  width: 80px;
-  height: 80px;
+  width: 70px;
 `;
 
 export const FormWrapper = styled.form`

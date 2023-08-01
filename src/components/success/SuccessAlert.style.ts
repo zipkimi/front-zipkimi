@@ -18,9 +18,7 @@ export const Strong = styled.strong`
 
 export const Logo = styled.img`
   display: inline-block;
-  border: 1px solid gray;
-  width: 100px;
-  height: 100px;
+  width: 80px;
 `;
 
 export const Celebration = styled.p`

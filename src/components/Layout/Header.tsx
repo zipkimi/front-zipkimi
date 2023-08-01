@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Logo from "../../assets/icon/icon_zipkimi(k).png";
 
 type Props = {
   firstWord?: string;
@@ -15,7 +16,7 @@ const Header = ({ firstWord, secondWord }: Props) => {
         </BackBtn>
       </div>
       <TitleWrapper>
-        <img src="" alt="집킴이" />
+        <img src={Logo} alt="집킴이" />
         <Title>
           <span>{firstWord}</span>
           <span>{secondWord}</span>
@@ -45,8 +46,6 @@ const TitleWrapper = styled.div`
   margin-top: 4rem;
   img {
     display: inline-block;
-    border: 1px solid black;
-    width: 80px;
     height: 80px;
   }
 `;

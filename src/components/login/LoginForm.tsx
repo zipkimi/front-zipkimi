@@ -5,6 +5,7 @@ import ZButton from "../ZButton/ZButton";
 import { useForm } from "react-hook-form";
 import * as S from "./LoginForm.style";
 import { useNavigate } from "react-router-dom";
+import Logo from "../../assets/icon/icon_zipkimi(k).png";
 
 const LoginForm = () => {
   const {
@@ -47,7 +48,7 @@ const LoginForm = () => {
   return (
     <div>
       <S.Title>
-        <S.Logo src="" alt="집킴이" />
+        <S.Logo src={Logo} alt="집킴이" />
       </S.Title>
       <S.FormWrapper action="" onSubmit={handleSubmit(onSubmit)}>
         <InputLayout htmlFor={"id"} label={""}>
