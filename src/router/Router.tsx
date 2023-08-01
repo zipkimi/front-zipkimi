@@ -1,24 +1,27 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "../components/layout/Layout";
-import Fraud from "../pages/Fraud";
-import DetailPrevent from "../pages/Fraud/Prevent/Detail/DetailPrevent";
-import CreatePrevent from "../pages/Fraud/Prevent/Create/CreatePrevent";
-import Home from "../pages/Home";
-import { FRAUD, ROUTES } from "../const/ROUTES";
-import NewAccount from "../pages/NewAccount";
+import Layout from "../components/Layout/Layout";
+import { ROUTES } from "../const/ROUTES";
+import NewAccount from "../pages/signUp";
+import Success from "../pages/success";
+import Login from "../pages/login";
+import FindId from "../pages/findId";
+import FindPw from "../pages/findPw";
+import Find from "../pages/find";
+import Verified from "../pages/verified";
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path={ROUTES.HOME} element={<Home />} />
-          <Route path={ROUTES.NEW} element={<NewAccount />} />
-          <Route path={FRAUD.HOME} element={<Fraud />} />
-          <Route path={FRAUD.DETAIL} element={<DetailPrevent />} />
-          <Route path={FRAUD.CREATE} element={<CreatePrevent />} />
-          <Route path={FRAUD.CREATE} element={<CreatePrevent />} />
+          <Route path={ROUTES.LOGIN} element={<Login />} />
+          <Route path={ROUTES.SIGNUP} element={<NewAccount />} />
+          <Route path={ROUTES.SUCCESS} element={<Success />} />
+          <Route path={ROUTES.VERIFIED} element={<Verified />} />
+          <Route path={ROUTES.FIND} element={<Find />} />
+          <Route path={ROUTES.FIND_ID} element={<FindId />} />
+          <Route path={ROUTES.FIND_PW} element={<FindPw />} />
         </Route>
       </Routes>
     </BrowserRouter>
