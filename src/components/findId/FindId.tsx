@@ -5,6 +5,7 @@ import ZButton from "../ZButton/ZButton";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import * as S from "./FindId.style";
+import FormLayout from "../Layout/Form.layout";
 
 const FindId = () => {
   const {
@@ -45,12 +46,15 @@ const FindId = () => {
   });
 
   return (
-    <>
-      <S.Logo src="" alt="집킴이" />
-      <S.TitleWrapper>
-        <span>아이디</span>
-        <span> 찾기</span>
-      </S.TitleWrapper>
+    <FormLayout
+      action=""
+      onSubmit={handleSubmit(onSubmit)}
+      button={
+        <ZButton type="submit" onClick={() => navigate("/find-pw")}>
+          인증번호 받기
+        </ZButton>
+      }
+    >
       <S.TxtWrapper>
         <S.Strong>회원정보에 등록한 휴대전화로 인증</S.Strong>
         <S.Small>
@@ -75,11 +79,8 @@ const FindId = () => {
             watch={watch}
           />
         </InputLayout>
-        <S.BtnWrapper>
-          <ZButton>인증번호 받기</ZButton>
-        </S.BtnWrapper>
       </S.FormWrapper>
-    </>
+    </FormLayout>
   );
 };
 

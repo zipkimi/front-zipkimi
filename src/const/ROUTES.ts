@@ -3,6 +3,8 @@ export const ROUTES = {
   LOGIN: "/login",
   SIGNUP: "/signup",
   SUCCESS: "/success",
+  VERIFIED: "/verified",
+  FIND: "/find",
   FIND_ID: "/find-id",
   FIND_PW: "/find-pw",
 };

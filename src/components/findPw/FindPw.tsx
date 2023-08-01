@@ -5,6 +5,7 @@ import ZButton from "../ZButton/ZButton";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import * as S from "./FindPw.style";
+import FormLayout from "../Layout/Form.layout";
 
 const FindPw = () => {
   const {
@@ -45,12 +46,13 @@ const FindPw = () => {
   });
 
   return (
-    <>
-      <S.Logo src="" alt="집킴이" />
-      <S.TitleWrapper>
-        <span>비밀번호</span>
-        <span> 찾기</span>
-      </S.TitleWrapper>
+    <FormLayout
+      button={
+        <S.BtnWrapper>
+          <ZButton onClick={() => navigate("/verified")}>다음</ZButton>
+        </S.BtnWrapper>
+      }
+    >
       <S.TxtWrapper>
         <S.Strong>비밀번호를 찾고자 하는 아이디를 입력해주세요.</S.Strong>
       </S.TxtWrapper>
@@ -70,11 +72,8 @@ const FindPw = () => {
             아이디 찾기
           </S.BtnFindId>
         </S.FindIdWrapper>
-        <S.BtnWrapper>
-          <ZButton onClick={() => navigate("/login")}>다음</ZButton>
-        </S.BtnWrapper>
       </S.FormWrapper>
-    </>
+    </FormLayout>
   );
 };
 

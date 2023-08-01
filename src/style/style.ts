@@ -13,6 +13,6 @@ export const ContentsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 4rem 2rem;
+  padding: 1.5rem;
   height: 100%;
 `;

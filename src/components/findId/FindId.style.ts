@@ -26,7 +26,7 @@ export const TxtWrapper = styled.p`
 export const Strong = styled.strong`
   display: block;
   margin-bottom: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: ${({ theme }) => theme.COLOR.original};
 `;
 
