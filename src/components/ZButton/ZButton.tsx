@@ -7,17 +7,29 @@ interface Props extends ButtonHTMLAttributes<any> {
   color?: "original" | "originalBright" | "originalDisabled";
   isRound?: keyof typeof theme.ROUND;
   height?: number;
+  outline?: boolean;
 }
 
 const ZButton = (props: Props) => {
-  let { color = "original", isRound = "xs", height = 48 } = props;
+  let {
+    color = "original",
+    isRound = "mm",
+    height = 48,
+    outline = false,
+  } = props;
 
   if (props.disabled) {
     color = "originalDisabled";
   }
 
   return (
-    <Button colored={color} round={isRound} height={height} {...props}>
+    <Button
+      colored={color}
+      round={isRound}
+      height={height}
+      outline={outline}
+      {...props}
+    >
       {props.children}
     </Button>
   );
@@ -29,13 +41,18 @@ export const Button = styled.button<{
   colored: "original" | "originalBright" | "originalDisabled";
   round: keyof typeof theme.ROUND;
   height: number;
+  outline: boolean;
 }>`
+  border: ${({ theme, outline, colored }) =>
+    outline ? `1px solid ${theme.COLOR[colored]}` : "none"};
   border-radius: ${({ theme, round }) => theme.ROUND[round]};
   width: 100%;
   height: ${({ height }) => `${height}px`};
   padding: 14px 16px;
   font-size: 1rem;
-  color: white;
+  color: ${({ theme, outline, colored }) =>
+    outline ? theme.COLOR[colored] : "white"};
   outline: none;
-  background-color: ${({ theme, colored }) => theme.COLOR[colored]};
+  background-color: ${({ theme, colored, outline }) =>
+    outline ? "white" : theme.COLOR[colored]};
 `;

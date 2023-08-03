@@ -13,7 +13,12 @@ const CreateAccountBtnGroup = () => {
     <S.BtnWrapper>
       <S.NaverBtn type="button">네이버로 시작</S.NaverBtn>
       <S.KakaoBtn type="button">카카오로 시작</S.KakaoBtn>
-      <ZButton type="button" onClick={createAccount}>
+      <ZButton
+        type="button"
+        onClick={createAccount}
+        isRound={"xs"}
+        outline={true}
+      >
         회원가입
       </ZButton>
     </S.BtnWrapper>
