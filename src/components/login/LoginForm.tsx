@@ -74,7 +74,7 @@ const LoginForm = () => {
           />
         </InputLayout>
         <S.LoginWrapper>
-          <ZButton type="submit" disabled={true}>
+          <ZButton type="submit" disabled={true} isRound={"xs"}>
             로그인
           </ZButton>
         </S.LoginWrapper>

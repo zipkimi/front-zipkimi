@@ -28,6 +28,7 @@ const ROUND = {
   xs: "4px",
   sm: "8px",
   md: "16px",
+  mm: "24px",
   lg: "50%",
   xl: "100%",
 };
