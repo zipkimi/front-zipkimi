@@ -1,9 +1,9 @@
 import React from "react";
-import InputLayout from "../InputLayout/InputLayout";
-import ZInput from "../ZInput/ZInput";
-import ZButton from "../ZButton/ZButton";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import InputLayout from "../InputLayout/Input.layout";
+import ZInput from "../ZInput/ZInput";
+import ZButton from "../ZButton/ZButton";
 import * as S from "./FindPw.style";
 import FormLayout from "../Layout/Form.layout";
 
@@ -57,13 +57,13 @@ const FindPw = () => {
         <S.Strong>비밀번호를 찾고자 하는 아이디를 입력해주세요.</S.Strong>
       </S.TxtWrapper>
       <S.FormWrapper>
-        <InputLayout htmlFor={""} label={""}>
+        <InputLayout htmlFor="" label="">
           <ZInput
-            fieldName={"name"}
+            fieldName="name"
             errors={errors}
             reset={reset}
             watch={watch}
-            placeholder={"이메일을 입력해주세요."}
+            placeholder="이메일을 입력해주세요."
           />
         </InputLayout>
         <S.FindIdWrapper>

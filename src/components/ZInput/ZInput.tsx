@@ -1,15 +1,10 @@
-import React, {
-  HTMLInputTypeAttribute,
-  InputHTMLAttributes,
-  useState,
-} from "react";
-import EYE_OFF from "../../assets/icon/icon_eye_off.png";
-import EYE_ON from "../../assets/icon/icon_eye_on.png";
+import React, { InputHTMLAttributes, useState } from "react";
 import * as S from "./ZInput.style";
 
 interface Props extends InputHTMLAttributes<any> {
   register?: any;
   fieldName: string;
+
   errors: any;
   reset: any;
   watch: any;

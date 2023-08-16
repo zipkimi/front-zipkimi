@@ -1,10 +1,10 @@
 import React from "react";
-import InputLayout from "../InputLayout/InputLayout";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import InputLayout from "../InputLayout/Input.layout";
 import ZInput from "../ZInput/ZInput";
 import ZButton from "../ZButton/ZButton";
-import { useForm } from "react-hook-form";
 import * as S from "./LoginForm.style";
-import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/icon/icon_zipkimi(k).png";
 
 const LoginForm = () => {
@@ -51,30 +51,30 @@ const LoginForm = () => {
         <S.Logo src={Logo} alt="집킴이" />
       </S.Title>
       <S.FormWrapper action="" onSubmit={handleSubmit(onSubmit)}>
-        <InputLayout htmlFor={"id"} label={""}>
+        <InputLayout htmlFor="id" label="">
           <ZInput
             type="text"
             watch={watch}
             errors={errors}
             reset={reset}
-            fieldName={"email"}
+            fieldName="email"
             register={emailRegister}
-            placeholder={"이메일"}
+            placeholder="이메일"
           />
         </InputLayout>
-        <InputLayout htmlFor={"id"} label={""}>
+        <InputLayout htmlFor="id" label="">
           <ZInput
             type="password"
             watch={watch}
             errors={errors}
             reset={reset}
-            fieldName={"password"}
+            fieldName="password"
             register={pwRegister}
-            placeholder={"비밀번호"}
+            placeholder="비밀번호"
           />
         </InputLayout>
         <S.LoginWrapper>
-          <ZButton type="submit" disabled={true} isRound={"xs"}>
+          <ZButton type="submit" disabled isRound="xs">
             로그인
           </ZButton>
         </S.LoginWrapper>

@@ -1,23 +1,5 @@
 import styled from "styled-components";
 
-export const TitleWrapper = styled.p`
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  span {
-    font-size: 1.6rem;
-    font-weight: bold;
-  }
-`;
-
-export const Logo = styled.img`
-  display: inline-block;
-  border: 1px solid black;
-  width: 50px;
-  height: 50px;
-  margin: auto;
-`;
-
 export const TxtWrapper = styled.p`
   text-align: center;
   margin-bottom: 3rem;
@@ -43,6 +25,10 @@ export const FormWrapper = styled.form`
   gap: 1rem;
 `;
 
-export const BtnWrapper = styled.div`
-  margin-top: auto;
+export const CarrierWrapper = styled.div`
+  display: flex;
+  select {
+    border-radius: ${({ theme }) => theme.ROUND.xs};
+    margin-right: 0.5rem;
+  }
 `;

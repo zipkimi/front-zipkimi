@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import InputLayout from "../InputLayout/InputLayout";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import InputLayout from "../InputLayout/Input.layout";
 import ZInput from "../ZInput/ZInput";
 import ZButton from "../ZButton/ZButton";
 import * as S from "./SignUp.style";
-import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
 import FormLayout from "../Layout/Form.layout";
-import { TermsDetail, TermsWrapper } from "./SignUp.style";
+import { CARRIERS } from "../../const/CARRIERS";
 
 const SignUp = () => {
   const {
@@ -57,26 +57,26 @@ const SignUp = () => {
         </ZButton>
       }
     >
-      <InputLayout htmlFor={"id"} label={"아이디"} className="mb-1">
+      <InputLayout htmlFor="id" label="아이디" className="mb-1">
         <ZInput
           type="text"
           watch={watch}
           errors={errors}
           reset={reset}
-          fieldName={"email"}
+          fieldName="email"
           register={emailRegister}
-          placeholder={"이메일 주소를 입력해주세요."}
+          placeholder="이메일 주소를 입력해주세요."
         />
       </InputLayout>
-      <InputLayout htmlFor={"id"} label={"비밀번호"} className="mb-1">
+      <InputLayout htmlFor="id" label="비밀번호" className="mb-1">
         <ZInput
           type="password"
           watch={watch}
           errors={errors}
           reset={reset}
-          fieldName={"password"}
+          fieldName="password"
           register={pwRegister}
-          placeholder={"영문, 숫자, 특수문자 조합 8 ~ 16자"}
+          placeholder="영문, 숫자, 특수문자 조합 8 ~ 16자"
         />
       </InputLayout>
       <S.VerifyWrapper>
@@ -84,12 +84,13 @@ const SignUp = () => {
         <S.DivideLine />
         <S.SelectWrapper>
           <select name="" id="">
-            <option value="">SKT</option>
-            <option value="">KT</option>
-            <option value="">LG U+</option>
-            <option value="">SKT 알뜰폰</option>
-            <option value="">KT 알뜰폰</option>
-            <option value="">LG U+ 알뜰폰</option>
+            {CARRIERS.map((carrier) => {
+              return (
+                <option key={carrier.value} value={carrier.value}>
+                  {carrier.name}
+                </option>
+              );
+            })}
           </select>
         </S.SelectWrapper>
         <S.DivideLine />
