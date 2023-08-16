@@ -9,12 +9,14 @@ import FindId from "../pages/findId";
 import FindPw from "../pages/findPw";
 import Find from "../pages/find";
 import Verified from "../pages/verified";
+import Input from "../pages/input";
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
+          <Route path="/input" element={<Input />} />
           <Route path={ROUTES.LOGIN} element={<Login />} />
           <Route path={ROUTES.SIGNUP} element={<NewAccount />} />
           <Route path={ROUTES.SUCCESS} element={<Success />} />

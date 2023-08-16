@@ -10,16 +10,18 @@ const TEXT = {
 };
 
 const COLOR = {
-  original: "#405b9e",
+  original: "#3617CD",
   originalBright: "#3A00E545",
   originalHover: "#3A00E555",
   originalDisabled: "#405b9e60",
-  secondWhite: "#AEAEAE",
   txtInfo: "#808080",
+  gray: "#BCBCBC",
+  red: "#EB1B0E",
 };
 
 const SIZE = {
   info: ".9rem",
+  lg: "1.2rem",
   xl: "2rem",
 };
 
