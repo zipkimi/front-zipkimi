@@ -1,17 +1,17 @@
 import React, { InputHTMLAttributes, useState } from "react";
 import * as S from "./ZInput.style";
+import IClear from "../../assets/icon/icon_clear.png";
 
-interface Props extends InputHTMLAttributes<any> {
+interface Props extends InputHTMLAttributes<unknown> {
   register?: any;
   fieldName: string;
-
   errors: any;
   reset: any;
   watch: any;
 }
 
 const ZInput = (props: Props) => {
-  const { register, fieldName, errors, reset, watch } = props;
+  const { register, fieldName, errors, reset } = props;
   const [isReset, setIsReset] = useState(false);
 
   const handleFocus = () => {
@@ -36,10 +36,7 @@ const ZInput = (props: Props) => {
         <S.Input {...props} isError={errors[fieldName]} {...register} />
         <S.BtnWrapper>
           <S.CloseBtn type="button" isShow={isReset} onClick={handleReset}>
-            <S.Img
-              src={require("../../assets/icon/icon_clear.png")}
-              alt="삭제"
-            />
+            <S.Img src={IClear} alt="삭제" />
           </S.CloseBtn>
         </S.BtnWrapper>
       </S.InputWrapper>

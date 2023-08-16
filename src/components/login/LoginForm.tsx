@@ -14,13 +14,15 @@ const LoginForm = () => {
     register,
     setError,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm();
   const navigate = useNavigate();
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: unknown) => {
     console.log(data);
-    if (data.password !== data.rePassword) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    if (data?.password !== data?.rePassword) {
       setError(
         "rePassword",
         { message: "비밀번호가 일치하지 않습니다." },

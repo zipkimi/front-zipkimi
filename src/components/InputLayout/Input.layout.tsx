@@ -1,8 +1,8 @@
 import React, { HTMLAttributes } from "react";
-import Required from "../Required";
 import styled from "styled-components";
+import Required from "../Required";
 
-interface Props extends HTMLAttributes<any> {
+interface Props extends HTMLAttributes<unknown> {
   htmlFor: string;
   label: string | React.ReactNode;
   required?: boolean;

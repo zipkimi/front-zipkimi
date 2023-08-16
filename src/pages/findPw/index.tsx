@@ -5,9 +5,7 @@ import SignUpLayout from "../../components/Layout/SignUp.layout";
 
 const Index = () => {
   return (
-    <SignUpLayout
-      header={<Header firstWord={"비밀번호"} secondWord={" 찾기"} />}
-    >
+    <SignUpLayout header={<Header firstWord="비밀번호" secondWord=" 찾기" />}>
       <FindPw />
     </SignUpLayout>
   );

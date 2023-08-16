@@ -1,16 +1,16 @@
 import React from "react";
+import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 import Header from "../../components/Layout/Header";
 import SignUpLayout from "../../components/Layout/SignUp.layout";
 import ZButton from "../../components/ZButton/ZButton";
-import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
 
 const Index = () => {
   const navigate = useNavigate();
 
   return (
     <SignUpLayout
-      header={<Header firstWord={"아이디 / 비밀번호"} secondWord={" 찾기"} />}
+      header={<Header firstWord="아이디 / 비밀번호" secondWord=" 찾기" />}
     >
       <BtnWrapper>
         <ZButton onClick={() => navigate("/find-id")}>아이디 찾기</ZButton>

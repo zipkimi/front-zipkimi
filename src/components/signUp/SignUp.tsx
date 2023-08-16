@@ -15,13 +15,15 @@ const SignUp = () => {
     register,
     setError,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm();
   const navigate = useNavigate();
   const [isOpenTerms, setIsOpenTerms] = useState(false);
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: unknown) => {
     console.log(data);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     if (data.password !== data.rePassword) {
       setError(
         "rePassword",

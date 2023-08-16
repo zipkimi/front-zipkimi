@@ -1,7 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import * as S from "./SuccessAlert.style";
 import ZButton from "../ZButton/ZButton";
-import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/icon/icon_zipkimi(k).png";
 
 const SuccessAlert = () => {

@@ -1,7 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import FormLayout from "../Layout/Form.layout";
 import ZButton from "../ZButton/ZButton";
-import { useNavigate } from "react-router-dom";
 import * as S from "./Verified.style";
 
 const Verified = () => {

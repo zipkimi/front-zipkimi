@@ -1,7 +1,7 @@
 import React, { FormHTMLAttributes } from "react";
 import styled from "styled-components";
 
-interface Props extends FormHTMLAttributes<any> {
+interface Props extends FormHTMLAttributes<unknown> {
   children: React.ReactNode;
   button: React.ReactNode;
 }
