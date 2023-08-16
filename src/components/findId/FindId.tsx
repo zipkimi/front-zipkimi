@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import * as S from "./FindId.style";
 import FormLayout from "../Layout/Form.layout";
+import { CARRIERS } from "../../const/CARRIERS";
 
 const FindId = () => {
   const {
@@ -69,15 +70,29 @@ const FindId = () => {
             errors={errors}
             reset={reset}
             watch={watch}
+            placeholder={"고길동"}
           />
         </InputLayout>
         <InputLayout htmlFor={""} label={"휴대전화"}>
-          <ZInput
-            fieldName={"name"}
-            errors={errors}
-            reset={reset}
-            watch={watch}
-          />
+          <S.CarrierWrapper>
+            <select name="" id="">
+              {CARRIERS.map((carrier) => {
+                return (
+                  <option key={carrier.value} value={carrier.value}>
+                    {carrier.name}
+                  </option>
+                );
+              })}
+            </select>
+            <ZInput
+              type={"number"}
+              fieldName={"name"}
+              errors={errors}
+              reset={reset}
+              watch={watch}
+              placeholder={"01012345678"}
+            />
+          </S.CarrierWrapper>
         </InputLayout>
       </S.FormWrapper>
     </FormLayout>

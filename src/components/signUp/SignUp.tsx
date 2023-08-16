@@ -6,7 +6,7 @@ import * as S from "./SignUp.style";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import FormLayout from "../Layout/Form.layout";
-import { TermsDetail, TermsWrapper } from "./SignUp.style";
+import { CARRIERS } from "../../const/CARRIERS";
 
 const SignUp = () => {
   const {
@@ -84,12 +84,13 @@ const SignUp = () => {
         <S.DivideLine />
         <S.SelectWrapper>
           <select name="" id="">
-            <option value="">SKT</option>
-            <option value="">KT</option>
-            <option value="">LG U+</option>
-            <option value="">SKT 알뜰폰</option>
-            <option value="">KT 알뜰폰</option>
-            <option value="">LG U+ 알뜰폰</option>
+            {CARRIERS.map((carrier) => {
+              return (
+                <option key={carrier.value} value={carrier.value}>
+                  {carrier.name}
+                </option>
+              );
+            })}
           </select>
         </S.SelectWrapper>
         <S.DivideLine />
