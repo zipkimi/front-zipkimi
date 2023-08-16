@@ -1,30 +1,25 @@
 import React, { ButtonHTMLAttributes } from "react";
 import styled from "styled-components";
-import theme from "../../style/theme";
+import styleTheme from "../../style/theme";
 
-interface Props extends ButtonHTMLAttributes<any> {
+interface Props extends ButtonHTMLAttributes<unknown> {
   children: React.ReactNode;
   color?: "original" | "originalBright" | "originalDisabled";
-  isRound?: keyof typeof theme.ROUND;
+  isRound?: keyof typeof styleTheme.ROUND;
   height?: number;
   outline?: boolean;
 }
 
-const ZButton = (props: Props) => {
-  let {
-    color = "original",
-    isRound = "mm",
-    height = 48,
-    outline = false,
-  } = props;
-
-  if (props.disabled) {
-    color = "originalDisabled";
-  }
-
+const ZButton = ({
+  color = "original",
+  isRound = "mm",
+  height = 48,
+  outline = false,
+  ...props
+}: Props) => {
   return (
     <Button
-      colored={color}
+      colored={props.disabled ? "originalDisabled" : color}
       round={isRound}
       height={height}
       outline={outline}
@@ -39,7 +34,7 @@ export default ZButton;
 
 export const Button = styled.button<{
   colored: "original" | "originalBright" | "originalDisabled";
-  round: keyof typeof theme.ROUND;
+  round: keyof typeof styleTheme.ROUND;
   height: number;
   outline: boolean;
 }>`

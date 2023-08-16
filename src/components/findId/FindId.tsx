@@ -1,9 +1,9 @@
 import React from "react";
-import InputLayout from "../InputLayout/InputLayout";
-import ZInput from "../ZInput/ZInput";
-import ZButton from "../ZButton/ZButton";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import InputLayout from "../InputLayout/Input.layout";
+import ZInput from "../ZInput/ZInput";
+import ZButton from "../ZButton/ZButton";
 import * as S from "./FindId.style";
 import FormLayout from "../Layout/Form.layout";
 import { CARRIERS } from "../../const/CARRIERS";
@@ -64,16 +64,16 @@ const FindId = () => {
         </S.Small>
       </S.TxtWrapper>
       <S.FormWrapper>
-        <InputLayout htmlFor={""} label={"이름"}>
+        <InputLayout htmlFor="" label="이름">
           <ZInput
-            fieldName={"name"}
+            fieldName="name"
             errors={errors}
             reset={reset}
             watch={watch}
-            placeholder={"고길동"}
+            placeholder="고길동"
           />
         </InputLayout>
-        <InputLayout htmlFor={""} label={"휴대전화"}>
+        <InputLayout htmlFor="" label="휴대전화">
           <S.CarrierWrapper>
             <select name="" id="">
               {CARRIERS.map((carrier) => {
@@ -85,12 +85,12 @@ const FindId = () => {
               })}
             </select>
             <ZInput
-              type={"number"}
-              fieldName={"name"}
+              type="number"
+              fieldName="name"
               errors={errors}
               reset={reset}
               watch={watch}
-              placeholder={"01012345678"}
+              placeholder="01012345678"
             />
           </S.CarrierWrapper>
         </InputLayout>

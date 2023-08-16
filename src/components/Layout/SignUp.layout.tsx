@@ -1,11 +1,11 @@
 import React from "react";
-import { BodyStyle } from "../../style/style";
 import styled from "styled-components";
+import { BodyStyle } from "../../style/style";
 
-interface Props {
+type Props = {
   children: React.ReactNode;
   header?: React.ReactNode;
-}
+};
 
 const SignUpLayout = ({ children, header }: Props) => {
   return (
