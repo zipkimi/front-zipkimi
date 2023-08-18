@@ -1,1 +1,3 @@
-// const authInput = "input";
+// const authInput = () => {
+
+// }
