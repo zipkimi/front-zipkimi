@@ -57,13 +57,14 @@ const ZInputNew = ({
           {...register}
         />
         <S.BtnWrapper>
-          <S.CloseBtn type="button" isShow={isReset} onClick={handleReset}>
-            <S.Img src={IClear} alt="삭제" />
-          </S.CloseBtn>
+          {isPw && (
+            <S.CloseBtn type="button" isShow={isReset} onClick={handleReset}>
+              <S.Img src={IClear} alt="삭제" />
+            </S.CloseBtn>
+          )}
           {isValid && !errors[fieldName] && (
             <S.ImgCheck src={ICheck} alt="완료" />
           )}
-          {!isPw && <S.LayoutBox />}
           {isPw && (
             <S.ShowBtn type="button" onClick={() => setIsHide((prev) => !prev)}>
               <S.Img src={isHide ? EYE_OFF : EYE_ON} alt="비밀번호 가리기" />

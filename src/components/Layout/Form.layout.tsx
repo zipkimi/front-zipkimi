@@ -9,7 +9,7 @@ interface Props extends FormHTMLAttributes<unknown> {
 const FormLayout = ({ children, button, ...props }: Props) => {
   return (
     <FormWrapper {...props}>
-      <div>{children}</div>
+      <ContentWrapper>{children}</ContentWrapper>
       {button}
     </FormWrapper>
   );
@@ -25,4 +25,11 @@ export const FormWrapper = styled.form`
   .mb-1 {
     margin-bottom: 2rem;
   }
+`;
+
+export const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 `;

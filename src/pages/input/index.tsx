@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import ZInputNew from "../../components/ZInput/ZInputNew";
 import InputLayout from "../../components/InputLayout/Input.layout";
 import ZButton from "../../components/ZButton/ZButton";
+import FormLayout from "../../components/Layout/Form.layout";
+import { BodyStyle } from "../../style/style";
 
 const Index = () => {
   const {
@@ -43,8 +45,15 @@ const Index = () => {
     },
   });
   return (
-    <div style={{ padding: "1rem" }}>
-      <form onSubmit={handleSubmit(onSubmit)}>
+    <BodyStyle>
+      <FormLayout
+        button={
+          <ZButton type="submit" isRound="none">
+            로그인
+          </ZButton>
+        }
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <InputLayout htmlFor="email" label="이메일" required>
           <ZInputNew
             watch={watch}
@@ -65,11 +74,8 @@ const Index = () => {
             placeholder="비밀번호"
           />
         </InputLayout>
-        <ZButton type="submit" isRound="xs">
-          로그인
-        </ZButton>
-      </form>
-    </div>
+      </FormLayout>
+    </BodyStyle>
   );
 };
 
