@@ -1,10 +1,13 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import styled from "styled-components";
 import ZInputNew from "../../components/ZInput/ZInputNew";
 import InputLayout from "../../components/InputLayout/Input.layout";
 import ZButton from "../../components/ZButton/ZButton";
 import FormLayout from "../../components/Layout/Form.layout";
 import { BodyStyle } from "../../style/style";
+import HeaderLayout from "../../components/Layout/Header.layout";
+import IBefore from "../../assets/icon/icon_before.png";
 
 const Index = () => {
   const {
@@ -54,6 +57,14 @@ const Index = () => {
         }
         onSubmit={handleSubmit(onSubmit)}
       >
+        <HeaderLayout
+          title="회원가입"
+          btn={
+            <button type="button">
+              <Img src={IBefore} alt="뒤로가기" />
+            </button>
+          }
+        />
         <InputLayout htmlFor="email" label="이메일" required>
           <ZInputNew
             watch={watch}
@@ -80,3 +91,8 @@ const Index = () => {
 };
 
 export default Index;
+
+const Img = styled.img`
+  width: 24px;
+  height: 24px;
+`;

@@ -39,7 +39,7 @@ export const FindIdWrapper = styled.div`
 
 export const Small = styled.small`
   font-size: 0.9rem;
-  color: ${({ theme }) => theme.COLOR.txtInfo};
+  color: ${({ theme }) => theme.COLOR.darkGray};
 `;
 
 export const BtnFindId = styled.button`
