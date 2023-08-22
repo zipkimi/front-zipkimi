@@ -24,11 +24,11 @@ export const Logo = styled.img`
 export const Celebration = styled.p`
   margin-top: 80px;
   font-size: 1.2rem;
-  color: ${({ theme }) => theme.COLOR.txtInfo};
+  color: ${({ theme }) => theme.COLOR.darkGray};
 
   span {
     display: block;
     margin-top: 2rem;
-    color: ${({ theme }) => theme.COLOR.txtInfo};
+    color: ${({ theme }) => theme.COLOR.darkGray};
   }
 `;

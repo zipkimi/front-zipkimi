@@ -10,17 +10,19 @@ const TEXT = {
 };
 
 const COLOR = {
-  original: "#405b9e",
+  original: "#3617CD",
   originalBright: "#3A00E545",
-  originalHover: "#3A00E555",
-  originalDisabled: "#405b9e60",
-  secondWhite: "#AEAEAE",
-  txtInfo: "#808080",
+  lightGray: "#DCDCDC",
+  gray: "#BCBCBC",
+  darkGray: "#949494",
+  dimGray: "#4B4B4B",
+  red: "#EB1B0E",
 };
 
 const SIZE = {
-  info: ".9rem",
-  xl: "2rem",
+  font13: "0.93rem",
+  font15: "1.07rem",
+  font18: "1.28rem",
 };
 
 const ROUND = {

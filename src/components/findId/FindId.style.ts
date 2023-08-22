@@ -15,7 +15,7 @@ export const Strong = styled.strong`
 export const Small = styled.small`
   display: block;
   font-size: 0.9rem;
-  color: ${({ theme }) => theme.COLOR.txtInfo};
+  color: ${({ theme }) => theme.COLOR.darkGray};
 `;
 
 export const FormWrapper = styled.form`

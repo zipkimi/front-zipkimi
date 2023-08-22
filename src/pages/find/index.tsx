@@ -34,5 +34,5 @@ const Small = styled.small`
   display: block;
   text-align: center;
   font-size: 0.9rem;
-  color: ${({ theme }) => theme.COLOR.txtInfo};
+  color: ${({ theme }) => theme.COLOR.darkGray};
 `;

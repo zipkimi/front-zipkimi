@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Required = () => {
-  return <RedStar>*</RedStar>;
+  return <Star>*</Star>;
 };
 
 export default Required;
 
-const RedStar = styled.span`
-  color: red;
-  font-size: 14px;
+const Star = styled.span`
+  color: ${({ theme }) => theme.COLOR.original};
+  font-size: ${({ theme }) => theme.SIZE.lg};
 `;

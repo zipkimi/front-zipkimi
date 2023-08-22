@@ -54,7 +54,7 @@ const Title = styled.strong`
   display: block;
   margin-top: 1rem;
   span {
-    font-size: ${({ theme }) => theme.SIZE.xl};
+    font-size: 2rem;
   }
   span:first-child {
     color: cornflowerblue;

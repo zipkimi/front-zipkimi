@@ -4,7 +4,7 @@ import "../assets/font/font.css";
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
-    font-family: "spoqa", "inherit";
+    font-family: 'Noto Sans KR', sans-serif;
   }
 
   html, body, div, span, applet, object, iframe,
@@ -77,6 +77,10 @@ const GlobalStyle = createGlobalStyle`
 
   img {
     display: block;
+  }
+  
+  input::placeholder {
+    color: #BCBCBC;
   }
 `;
 
