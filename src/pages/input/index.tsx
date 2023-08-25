@@ -6,6 +6,7 @@ import ZButton from "../../components/ZButton/ZButton";
 import FormLayout from "../../components/Layout/Form.layout";
 import { BodyStyle } from "../../style/style";
 import HeaderLayout from "../../components/Layout/Header.layout";
+import ZTab from "../../components/ZTab/ZTab";
 
 const Index = () => {
   const {
@@ -56,6 +57,10 @@ const Index = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <HeaderLayout title="회원가입" btn="back" />
+        <ZTab
+          tabs={["아이디 찾기", "비밀번호 찾기"]}
+          onChangeTab={(e) => console.log(e)}
+        />
         <InputLayout htmlFor="email" label="이메일" required>
           <ZInputNew
             watch={watch}
