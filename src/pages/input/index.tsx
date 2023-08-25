@@ -48,6 +48,7 @@ const Index = () => {
   });
   return (
     <BodyStyle>
+      <HeaderLayout title="회원가입" btn="back" />
       <FormLayout
         button={
           <ZButton type="submit" isRound="none">
@@ -56,7 +57,6 @@ const Index = () => {
         }
         onSubmit={handleSubmit(onSubmit)}
       >
-        <HeaderLayout title="회원가입" btn="back" />
         <ZTab
           tabs={["아이디 찾기", "비밀번호 찾기"]}
           onChangeTab={(e) => console.log(e)}

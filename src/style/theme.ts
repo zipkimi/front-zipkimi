@@ -20,8 +20,10 @@ const COLOR = {
 };
 
 const SIZE = {
+  font12: "0.86rem",
   font13: "0.93rem",
   font15: "1.07rem",
+  font16: "1.15rem",
   font18: "1.28rem",
   font20: "1.43rem",
 };
