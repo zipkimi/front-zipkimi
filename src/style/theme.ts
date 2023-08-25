@@ -23,6 +23,7 @@ const SIZE = {
   font13: "0.93rem",
   font15: "1.07rem",
   font18: "1.28rem",
+  font20: "1.43rem",
 };
 
 const ROUND = {
