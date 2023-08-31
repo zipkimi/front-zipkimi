@@ -5,8 +5,6 @@ import { ROUTES } from "../const/ROUTES";
 import NewAccount from "../pages/signUp";
 import Success from "../pages/success";
 import Login from "../pages/login";
-import FindId from "../pages/findId";
-import FindPw from "../pages/findPw";
 import Find from "../pages/find";
 import Verified from "../pages/verified";
 import Input from "../pages/input";
@@ -24,8 +22,7 @@ const Router = () => {
           <Route path={ROUTES.SUCCESS} element={<Success />} />
           <Route path={ROUTES.VERIFIED} element={<Verified />} />
           <Route path={ROUTES.FIND} element={<Find />} />
-          <Route path={ROUTES.FIND_ID} element={<FindId />} />
-          <Route path={ROUTES.FIND_PW} element={<FindPw />} />
+          {/* <Route path={ROUTES.FIND} element={<Reset />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
