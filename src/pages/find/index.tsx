@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import ZButton from "../../components/ZButton/ZButton";
 import HeaderLayout from "../../components/Layout/Header.layout";
 import FormLayout from "../../components/Layout/Form.layout";
@@ -10,6 +11,7 @@ import { BodyStyle } from "../../style/style";
 
 const Index = () => {
   const [tab, setTab] = useState("아이디 찾기");
+  const navigate = useNavigate();
   const {
     watch,
     reset,
@@ -118,7 +120,7 @@ const Index = () => {
                 placeholder="비밀번호"
               />
             </InputLayout>
-            <ZButton>비밀번호 찾기</ZButton>
+            <ZButton onClick={() => navigate("/reset")}>비밀번호 찾기</ZButton>
           </>
         )}
       </FormLayout>

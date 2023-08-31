@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import { BodyStyle } from "../../style/style";
 import HeaderLayout from "../../components/Layout/Header.layout";
 import FormLayout from "../../components/Layout/Form.layout";
@@ -8,6 +9,7 @@ import ZInputNew from "../../components/ZInput/ZInputNew";
 import ZButton from "../../components/ZButton/ZButton";
 
 const Index = () => {
+  const navigate = useNavigate();
   const {
     watch,
     reset,
@@ -70,7 +72,7 @@ const Index = () => {
             placeholder="새 비밀번호를 한번 더 입력해주세요."
           />
         </InputLayout>
-        <ZButton>확인</ZButton>
+        <ZButton onClick={() => navigate("/login")}>확인</ZButton>
       </FormLayout>
     </BodyStyle>
   );
