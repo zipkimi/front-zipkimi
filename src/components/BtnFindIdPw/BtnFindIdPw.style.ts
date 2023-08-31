@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
-export const P = styled.p`
+export const BtnWrapper = styled.div`
   text-align: center;
   font-size: ${({ theme }) => theme.SIZE.font13};
   color: ${({ theme }) => theme.COLOR.lightGray};
-  a {
+  button {
     font-size: ${({ theme }) => theme.SIZE.font13};
     color: ${({ theme }) => theme.COLOR.darkGray};
   }
-  a:first-child {
+  button:first-child {
     margin-right: 20px;
   }
-  a:last-child {
+  button:last-child {
     margin-left: 20px;
   }
 `;

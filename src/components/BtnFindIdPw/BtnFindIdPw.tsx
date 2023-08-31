@@ -1,20 +1,31 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import * as S from "./BtnFindIdPw.style";
+import { ROUTES } from "../../const/ROUTES";
 
 const BtnFindIdPw = () => {
   const navigate = useNavigate();
 
   return (
-    <S.P>
-      <a href="#id" onClick={() => navigate("/find")}>
+    <S.BtnWrapper>
+      <button
+        type="button"
+        onClick={() =>
+          navigate(ROUTES.FIND, { state: { name: "아이디 찾기" } })
+        }
+      >
         아이디 찾기
-      </a>
+      </button>
       |
-      <a href="#pw" onClick={() => navigate("/find")}>
+      <button
+        type="button"
+        onClick={() =>
+          navigate(ROUTES.FIND, { state: { name: "비밀번호 찾기" } })
+        }
+      >
         비밀번호 찾기
-      </a>
-    </S.P>
+      </button>
+    </S.BtnWrapper>
   );
 };
 

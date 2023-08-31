@@ -67,7 +67,7 @@ const Index = () => {
             reset={reset}
             fieldName="email"
             register={emailRegister}
-            placeholder="이메일"
+            placeholder="이메일 주소를 입력해주세요"
           />
         </InputLayout>
         <InputLayout htmlFor="password" label="비밀번호">
@@ -77,7 +77,7 @@ const Index = () => {
             reset={reset}
             fieldName="password"
             register={pwRegister}
-            placeholder="비밀번호"
+            placeholder="영문, 숫자, 특수문자 조합 8~16자"
           />
         </InputLayout>
         <ZButton>로그인</ZButton>

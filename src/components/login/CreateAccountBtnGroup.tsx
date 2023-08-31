@@ -4,11 +4,12 @@ import ZButton from "../ZButton/ZButton";
 import * as S from "./CreateAccountBtnGroup.style";
 import INaver from "../../assets/icon/icon_naver.png";
 import IKakao from "../../assets/icon/icon_kakao.png";
+import { ROUTES } from "../../const/ROUTES";
 
 const CreateAccountBtnGroup = () => {
   const navigate = useNavigate();
   const createAccount = () => {
-    navigate("/sign-in");
+    navigate(ROUTES.SIGN_IN);
   };
 
   return (

@@ -6,5 +6,6 @@ export const ROUTES = {
   SUCCESS: "/success",
   VERIFIED: "/verified",
   FIND: "/find",
+  FIND_SUCCESS: "/find/success",
   RESET: "/reset",
 };

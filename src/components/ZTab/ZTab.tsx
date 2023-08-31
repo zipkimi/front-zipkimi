@@ -4,10 +4,11 @@ import * as S from "./ZTab.style";
 type Props = {
   tabs: string[];
   onChangeTab: (tabName: string) => void;
+  defaultTab?: string;
 };
 
-const ZTab = ({ tabs, onChangeTab }: Props) => {
-  const [selectedTab, setSelectedTab] = useState("");
+const ZTab = ({ tabs, onChangeTab, defaultTab }: Props) => {
+  const [selectedTab, setSelectedTab] = useState(defaultTab);
 
   useEffect(() => {
     if (!selectedTab) {

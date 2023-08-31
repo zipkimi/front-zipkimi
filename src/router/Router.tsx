@@ -10,6 +10,7 @@ import Verified from "../pages/verified";
 import Input from "../pages/input";
 import SingIn from "../pages/singIn";
 import Reset from "../pages/reset";
+import FindSuccess from "../pages/findSuccess";
 
 const Router = () => {
   return (
@@ -23,6 +24,7 @@ const Router = () => {
           <Route path={ROUTES.SUCCESS} element={<Success />} />
           <Route path={ROUTES.VERIFIED} element={<Verified />} />
           <Route path={ROUTES.FIND} element={<Find />} />
+          <Route path={ROUTES.FIND_SUCCESS} element={<FindSuccess />} />
           <Route path={ROUTES.RESET} element={<Reset />} />
         </Route>
       </Routes>
