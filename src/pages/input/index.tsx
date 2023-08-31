@@ -1,13 +1,12 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import styled from "styled-components";
 import ZInputNew from "../../components/ZInput/ZInputNew";
 import InputLayout from "../../components/InputLayout/Input.layout";
 import ZButton from "../../components/ZButton/ZButton";
 import FormLayout from "../../components/Layout/Form.layout";
 import { BodyStyle } from "../../style/style";
 import HeaderLayout from "../../components/Layout/Header.layout";
-import IBefore from "../../assets/icon/icon_before.png";
+import ZTab from "../../components/ZTab/ZTab";
 
 const Index = () => {
   const {
@@ -49,6 +48,7 @@ const Index = () => {
   });
   return (
     <BodyStyle>
+      <HeaderLayout title="회원가입" btn="back" />
       <FormLayout
         button={
           <ZButton type="submit" isRound="none">
@@ -57,13 +57,9 @@ const Index = () => {
         }
         onSubmit={handleSubmit(onSubmit)}
       >
-        <HeaderLayout
-          title="회원가입"
-          btn={
-            <button type="button">
-              <Img src={IBefore} alt="뒤로가기" />
-            </button>
-          }
+        <ZTab
+          tabs={["아이디 찾기", "비밀번호 찾기"]}
+          onChangeTab={(e) => console.log(e)}
         />
         <InputLayout htmlFor="email" label="이메일" required>
           <ZInputNew
@@ -91,8 +87,3 @@ const Index = () => {
 };
 
 export default Index;
-
-const Img = styled.img`
-  width: 24px;
-  height: 24px;
-`;
