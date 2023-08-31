@@ -9,6 +9,7 @@ import Find from "../pages/find";
 import Verified from "../pages/verified";
 import Input from "../pages/input";
 import SingIn from "../pages/singIn";
+import Reset from "../pages/reset";
 
 const Router = () => {
   return (
@@ -22,7 +23,7 @@ const Router = () => {
           <Route path={ROUTES.SUCCESS} element={<Success />} />
           <Route path={ROUTES.VERIFIED} element={<Verified />} />
           <Route path={ROUTES.FIND} element={<Find />} />
-          {/* <Route path={ROUTES.FIND} element={<Reset />} /> */}
+          <Route path={ROUTES.RESET} element={<Reset />} />
         </Route>
       </Routes>
     </BrowserRouter>
