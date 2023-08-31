@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   text-align: center;
   height: 100%;
   margin-top: 75px;
+  padding: 20px;
 `;
 
 export const Strong = styled.strong`
@@ -24,6 +25,6 @@ export const Logo = styled.img`
 
 export const Celebration = styled.p`
   font-size: ${({ theme }) => theme.SIZE.font15};
-  color: ${({ theme }) => theme.COLOR.darkGray};
+  color: ${({ theme }) => theme.COLOR.dark};
   line-height: 23px;
 `;

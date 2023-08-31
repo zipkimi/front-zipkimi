@@ -10,6 +10,7 @@ import FindPw from "../pages/findPw";
 import Find from "../pages/find";
 import Verified from "../pages/verified";
 import Input from "../pages/input";
+import SingIn from "../pages/singIn";
 
 const Router = () => {
   return (
@@ -18,6 +19,7 @@ const Router = () => {
         <Route element={<Layout />}>
           <Route path="/input" element={<Input />} />
           <Route path={ROUTES.LOGIN} element={<Login />} />
+          <Route path={ROUTES.SIGN_IN} element={<SingIn />} />
           <Route path={ROUTES.SIGNUP} element={<NewAccount />} />
           <Route path={ROUTES.SUCCESS} element={<Success />} />
           <Route path={ROUTES.VERIFIED} element={<Verified />} />

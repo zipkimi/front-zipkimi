@@ -8,7 +8,7 @@ import IKakao from "../../assets/icon/icon_kakao.png";
 const CreateAccountBtnGroup = () => {
   const navigate = useNavigate();
   const createAccount = () => {
-    navigate("/signup");
+    navigate("/sign-in");
   };
 
   return (

@@ -4,6 +4,7 @@ import { BodyStyle, ContentsWrapper } from "../../style/style";
 import CreateAccountBtnGroup from "../../components/login/CreateAccountBtnGroup";
 import HeaderLayout from "../../components/Layout/Header.layout";
 import Logo from "../../assets/icon/icon_logo.png";
+import BtnSingUp from "../../components/BtnSingUp/BtnSingUp";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
         <div>
           <ImgLogo src={Logo} alt="집킴이 로고" />
           <CreateAccountBtnGroup />
+          <BtnSingUp />
         </div>
       </ContentsWrapper>
     </BodyStyle>
@@ -25,5 +27,5 @@ const ImgLogo = styled.img`
   display: block;
   width: 100px;
   height: 100px;
-  margin: 75px auto 60px;
+  margin: 60px auto;
 `;
