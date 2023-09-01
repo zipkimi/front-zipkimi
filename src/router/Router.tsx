@@ -7,8 +7,9 @@ import Success from "../pages/success";
 import Login from "../pages/login";
 import FindId from "../pages/findId";
 import FindPw from "../pages/findPw";
-import Find from "../pages/find";
+// import Find from "../pages/find";
 import Verified from "../pages/verified";
+import AuthInput from "../components/authInput/AuthInput";
 
 const Router = () => {
   return (
@@ -19,7 +20,7 @@ const Router = () => {
           <Route path={ROUTES.SIGNUP} element={<NewAccount />} />
           <Route path={ROUTES.SUCCESS} element={<Success />} />
           <Route path={ROUTES.VERIFIED} element={<Verified />} />
-          <Route path={ROUTES.FIND} element={<Find />} />
+          <Route path={ROUTES.FIND} element={<AuthInput />} />
           <Route path={ROUTES.FIND_ID} element={<FindId />} />
           <Route path={ROUTES.FIND_PW} element={<FindPw />} />
         </Route>
