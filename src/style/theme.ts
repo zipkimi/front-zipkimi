@@ -16,6 +16,7 @@ const COLOR = {
   gray: "#BCBCBC",
   darkGray: "#949494",
   dimGray: "#4B4B4B",
+  dark: "#333333",
   red: "#EB1B0E",
 };
 
