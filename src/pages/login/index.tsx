@@ -1,17 +1,31 @@
 import React from "react";
+import styled from "styled-components";
 import { BodyStyle, ContentsWrapper } from "../../style/style";
-import LoginForm from "../../components/login/LoginForm";
 import CreateAccountBtnGroup from "../../components/login/CreateAccountBtnGroup";
+import HeaderLayout from "../../components/Layout/Header.layout";
+import Logo from "../../assets/icon/icon_logo.png";
+import BtnSingUp from "../../components/BtnSingUp/BtnSingUp";
 
 const Index = () => {
   return (
     <BodyStyle>
+      <HeaderLayout title="로그인" btn="back" />
       <ContentsWrapper>
-        <LoginForm />
-        <CreateAccountBtnGroup />
+        <div>
+          <ImgLogo src={Logo} alt="집킴이 로고" />
+          <CreateAccountBtnGroup />
+          <BtnSingUp />
+        </div>
       </ContentsWrapper>
     </BodyStyle>
   );
 };
 
 export default Index;
+
+const ImgLogo = styled.img`
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 60px auto;
+`;

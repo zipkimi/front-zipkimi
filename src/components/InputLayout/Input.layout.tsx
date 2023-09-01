@@ -26,5 +26,5 @@ export default InputForm;
 const Label = styled.label`
   display: block;
   color: #555555;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
 `;

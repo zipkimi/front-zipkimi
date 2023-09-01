@@ -4,7 +4,7 @@ export const Small = styled.small`
   display: block;
   text-align: center;
   font-size: 0.9rem;
-  color: ${({ theme }) => theme.COLOR.txtInfo};
+  color: ${({ theme }) => theme.COLOR.darkGray};
 `;
 
 export const BtnWrapper = styled.div`
@@ -16,7 +16,7 @@ export const BtnTempPw = styled.button`
   margin: 0 auto 1rem;
   text-align: center;
   font-size: 0.9rem;
-  color: ${({ theme }) => theme.COLOR.txtInfo};
+  color: ${({ theme }) => theme.COLOR.darkGray};
 `;
 
 export const ListWrapper = styled.dl`
@@ -28,7 +28,7 @@ export const DataWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
-  color: ${({ theme }) => theme.COLOR.txtInfo};
+  color: ${({ theme }) => theme.COLOR.darkGray};
   dt,
   dd {
     font-size: 0.9rem;
@@ -41,7 +41,7 @@ export const BadgeVerified = styled.dd`
   width: 65px;
   text-align: center;
   color: white;
-  background-color: ${({ theme }) => theme.COLOR.txtInfo};
+  background-color: ${({ theme }) => theme.COLOR.darkGray};
 `;
 
 export const BadgeRoute = styled.dd`

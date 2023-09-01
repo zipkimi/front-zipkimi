@@ -3,32 +3,28 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
   height: 100%;
+  margin-top: 75px;
+  padding: 20px;
 `;
 
 export const Strong = styled.strong`
   display: block;
-  margin-top: 6rem;
-  margin-bottom: 60px;
-  font-size: 1.6rem;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  font-size: ${({ theme }) => theme.SIZE.font20};
 `;
 
 export const Logo = styled.img`
   display: inline-block;
-  width: 80px;
+  width: 48px;
+  height: 48px;
 `;
 
 export const Celebration = styled.p`
-  margin-top: 80px;
-  font-size: 1.2rem;
-  color: ${({ theme }) => theme.COLOR.txtInfo};
-
-  span {
-    display: block;
-    margin-top: 2rem;
-    color: ${({ theme }) => theme.COLOR.txtInfo};
-  }
+  font-size: ${({ theme }) => theme.SIZE.font15};
+  color: ${({ theme }) => theme.COLOR.dark};
+  line-height: 23px;
 `;

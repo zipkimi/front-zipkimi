@@ -33,6 +33,6 @@ export const UtilWrapper = styled.div`
   label,
   div,
   button {
-    color: ${({ theme }) => theme.COLOR.txtInfo};
+    color: ${({ theme }) => theme.COLOR.darkGray};
   }
 `;
