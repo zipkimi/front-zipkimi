@@ -13,8 +13,7 @@ export const Box = styled.div`
 export const TypeNumber = styled.input.attrs({
   placeholderTextcolor: "#bcbcbc",
 })`
-  /* width: 100%; */
-  flex: 1 1 auto;
+  /* width: 150px; */
   line-height: 22px;
   height: 22px;
   margin: 13px 0px 13px 14px;
@@ -28,7 +27,7 @@ export const TypeNumber = styled.input.attrs({
 export const BoxButton = styled.button`
   width: 75px;
   height: 48px;
-  background-color: #3617cd;
+  background-color: #f0f0f0f0;
   border-radius: 0px 4px 4px 0px;
-  color: white;
+  color: #bcbcbc;
 `;

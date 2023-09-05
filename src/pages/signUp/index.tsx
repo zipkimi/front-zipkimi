@@ -1,13 +1,16 @@
 import React from "react";
 import SignUp from "../../components/signUp/SignUp";
-import SignUpLayout from "../../components/Layout/SignUp.layout";
-import Header from "../../components/Layout/Header";
+import { BodyStyle } from "../../style/style";
+import HeaderLayout from "../../components/Layout/Header.layout";
+// import SignUpLayout from "../../components/Layout/SignUp.layout";
+// import Header from "../../components/Layout/Header";
 
 const Index = () => {
   return (
-    <SignUpLayout header={<Header firstWord={"회원"} secondWord={"가입"} />}>
+    <BodyStyle>
+      <HeaderLayout title="회원가입" btn="back" />
       <SignUp />
-    </SignUpLayout>
+    </BodyStyle>
   );
 };
 

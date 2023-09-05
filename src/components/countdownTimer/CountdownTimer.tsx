@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import * as S from "./CountdownTimer.style";
 
-const CountdownTimer: React.FC = () => {
-  const [timeRemaining, setTimeRemaining] = useState(5 * 60); // 5 minutes in seconds
+interface CountdownTimerProps {
+  showTimer: boolean;
+}
+
+const CountdownTimer: React.FC<CountdownTimerProps> = ({ showTimer }) => {
+  const [timeRemaining, setTimeRemaining] = useState(5 * 60);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,6 +24,10 @@ const CountdownTimer: React.FC = () => {
   const formattedTime = `${String(minutes).padStart(2, "0")}:${String(
     seconds,
   ).padStart(2, "0")}`;
+
+  if (!showTimer) {
+    return null;
+  }
 
   return (
     <S.TimerBox>
