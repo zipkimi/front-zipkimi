@@ -10,7 +10,7 @@ const TEXT = {
 };
 
 const COLOR = {
-  original: "#3617CD",
+  original: "#5530E0",
   originalBright: "#3A00E545",
   lightGray: "#DCDCDC",
   gray: "#BCBCBC",
