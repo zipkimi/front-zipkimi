@@ -1,10 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import HeaderLayout from "../../components/Layout/Header.layout";
 import ZButton from "../../components/ZButton/ZButton";
 import { BodyStyle } from "../../style/style";
 import { ContentWrapper } from "../../components/Layout/Form.layout";
 import FindSuccessContents from "../../components/FindSuccessContents/FindSuccessContents";
-import { useNavigate } from "react-router-dom";
 import { ROUTES } from "../../const/ROUTES";
 
 const Index = () => {

@@ -8,6 +8,7 @@ export const InputWrapper = styled.div<{ isFocus: boolean }>`
     if (props.isFocus) {
       return `outline: 1px solid blue;`;
     }
+    return "";
   }}
 `;
 

@@ -5,7 +5,7 @@ import Header from "../../components/Layout/Header";
 
 const Index = () => {
   return (
-    <SignUpLayout header={<Header firstWord={"회원"} secondWord={"가입"} />}>
+    <SignUpLayout header={<Header firstWord="회원" secondWord="가입" />}>
       <SignUp />
     </SignUpLayout>
   );

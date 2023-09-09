@@ -7,14 +7,14 @@ export const Wrapper = styled.div`
 export const Title = styled.strong`
   display: block;
   margin-bottom: 6px;
-  font-size: ${({theme}) => theme.SIZE.font18};
+  font-size: ${({ theme }) => theme.SIZE.font18};
   font-weight: bold;
-`
+`;
 
 export const SubTxt = styled.small`
-  font-size: ${({theme}) => theme.SIZE.font13};
-  color: ${({theme}) => theme.COLOR.darkGray};
-`
+  font-size: ${({ theme }) => theme.SIZE.font13};
+  color: ${({ theme }) => theme.COLOR.darkGray};
+`;
 
 export const EmailWrapper = styled.div`
   display: flex;
@@ -31,4 +31,4 @@ export const EmailWrapper = styled.div`
     text-decoration: none;
     font-style: normal;
   }
-`
+`;
