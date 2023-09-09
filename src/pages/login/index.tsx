@@ -27,5 +27,5 @@ const ImgLogo = styled.img`
   display: block;
   width: 100px;
   height: 100px;
-  margin: 60px auto;
+  margin: 72px auto;
 `;

@@ -22,12 +22,14 @@ const Index = () => {
           onClick={() =>
             navigate(ROUTES.FIND, { state: { name: "비밀번호 찾기" } })
           }
+          isRound="xs"
         >
           비밀번호 찾기
         </ZButton>
         <ZButton
           style={{ marginTop: "-10px" }}
           onClick={() => navigate(ROUTES.LOGIN)}
+          isRound="xs"
         >
           로그인
         </ZButton>

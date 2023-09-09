@@ -9,6 +9,8 @@ import InputLayout from "../../components/InputLayout/Input.layout";
 import ZInputNew from "../../components/ZInput/ZInputNew";
 import { BodyStyle } from "../../style/style";
 import { ROUTES } from "../../const/ROUTES";
+import AuthInput from "../../components/AuthInput/AuthInput";
+import AuthInputConfirm from "../../components/AuthInputConfirm/AuthInputConfirm";
 
 const Index = () => {
   const [tab, setTab] = useState("아이디 찾기");
@@ -48,13 +50,13 @@ const Index = () => {
     },
   });
 
-  const authRegister = register("authCode", {
-    required: { value: true, message: "인증 번호를 입력해주세요." },
-    pattern: {
-      value: /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+]).{8}/,
-      message: "인증 번호를 정상적으로 입력해주세요.",
-    },
-  });
+  // const authRegister = register("authCode", {
+  //   required: { value: true, message: "인증 번호를 입력해주세요." },
+  //   pattern: {
+  //     value: /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+]).{8}/,
+  //     message: "인증 번호를 정상적으로 입력해주세요.",
+  //   },
+  // });
 
   const changeTab = (value: string) => {
     setTab(value);
@@ -75,27 +77,13 @@ const Index = () => {
         />
         {tab === "아이디 찾기" && (
           <>
-            <InputLayout htmlFor="email" label="휴대폰 번호" required>
-              <ZInputNew
-                watch={watch}
-                errors={errors}
-                reset={reset}
-                fieldName="email"
-                register={emailRegister}
-                placeholder="휴대전화 번호를 입력해주세요"
-              />
+            <InputLayout htmlFor="phone" label="휴대폰 번호" required>
+              <AuthInput />
             </InputLayout>
-            <InputLayout htmlFor="authCode" label="인증번호" required>
-              <ZInputNew
-                watch={watch}
-                errors={errors}
-                reset={reset}
-                fieldName="authCode"
-                register={authRegister}
-                placeholder="인증 번호를 입력해주세요"
-              />
+            <InputLayout htmlFor="auth" label="인증 번호" required>
+              <AuthInputConfirm />
             </InputLayout>
-            <ZButton>아이디 찾기</ZButton>
+            <ZButton isRound="xs">아이디 찾기</ZButton>
           </>
         )}
         {tab === "비밀번호 찾기" && (
@@ -110,27 +98,13 @@ const Index = () => {
                 placeholder="이메일 주소를 입력해주세요"
               />
             </InputLayout>
-            <InputLayout htmlFor="authCode" label="휴대폰 번호" required>
-              <ZInputNew
-                watch={watch}
-                errors={errors}
-                reset={reset}
-                fieldName="authCode"
-                register={authRegister}
-                placeholder="휴대전화 번호를 입력해주세요"
-              />
+            <InputLayout htmlFor="phone" label="휴대폰 번호" required>
+              <AuthInput />
             </InputLayout>
-            <InputLayout htmlFor="authCode" label="인증번호" required>
-              <ZInputNew
-                watch={watch}
-                errors={errors}
-                reset={reset}
-                fieldName="authCode"
-                register={authRegister}
-                placeholder="인증 번호를 입력해주세요"
-              />
+            <InputLayout htmlFor="auth" label="인증 번호" required>
+              <AuthInputConfirm />
             </InputLayout>
-            <ZButton onClick={() => navigate(ROUTES.RESET)}>
+            <ZButton onClick={() => navigate(ROUTES.RESET)} isRound="xs">
               비밀번호 찾기
             </ZButton>
           </>

@@ -73,7 +73,9 @@ const Index = () => {
             placeholder="새 비밀번호를 한번 더 입력해주세요."
           />
         </InputLayout>
-        <ZButton onClick={() => navigate(ROUTES.FIND_SUCCESS)}>확인</ZButton>
+        <ZButton onClick={() => navigate(ROUTES.FIND_SUCCESS)} isRound="xs">
+          확인
+        </ZButton>
       </FormLayout>
     </BodyStyle>
   );

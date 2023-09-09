@@ -16,7 +16,7 @@ export const TypeNumber = styled.input.attrs({
   /* width: 150px; */
   line-height: 22px;
   height: 22px;
-  margin: 13px 0px 13px 14px;
+  margin: 13px 0 13px 14px;
   font-size: 15px;
   color: Black;
   font-weight: 500;
@@ -26,8 +26,8 @@ export const TypeNumber = styled.input.attrs({
 
 export const BoxButton = styled.button`
   width: 75px;
-  height: 48px;
+  height: 46px;
   background-color: #f0f0f0f0;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   color: #bcbcbc;
 `;

@@ -7,7 +7,7 @@ import ZButton from "../ZButton/ZButton";
 import * as S from "./SignUp.style";
 import FormLayout from "../Layout/Form.layout";
 import AuthInput from "../AuthInput/AuthInput";
-import GreyAuthInput from "../AuthInput/GreyAuthInput";
+import AuthInputConfirm from "../AuthInputConfirm/AuthInputConfirm";
 import detail from "../../assets/icon/icon_detail.png";
 // import { CARRIERS } from "../../const/CARRIERS";
 
@@ -109,7 +109,7 @@ const SignUp = () => {
         <AuthInput />
       </InputLayout>
       <InputLayout htmlFor="id" label="인증 번호" required>
-        <GreyAuthInput />
+        <AuthInputConfirm />
         <S.DivideLine />
       </InputLayout>
       <InputLayout htmlFor="id" label="이용약관동의" required>

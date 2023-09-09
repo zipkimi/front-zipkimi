@@ -80,7 +80,7 @@ const Index = () => {
             placeholder="영문, 숫자, 특수문자 조합 8~16자"
           />
         </InputLayout>
-        <ZButton>로그인</ZButton>
+        <ZButton isRound="xs">로그인</ZButton>
         <BtnFindIdPw />
       </FormLayout>
     </BodyStyle>

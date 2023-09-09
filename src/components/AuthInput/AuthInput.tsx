@@ -6,7 +6,7 @@ const AuthInput = () => {
     <S.Box>
       <S.TypeNumber placeholder="휴대전화 번호를 입력해주세요" />
       <CountdownTimer showTimer />
-      <S.BoxButton>인증</S.BoxButton>
+      <S.BoxButton type="button">인증</S.BoxButton>
     </S.Box>
   );
 };
