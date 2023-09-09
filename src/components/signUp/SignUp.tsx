@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import InputLayout from "../InputLayout/Input.layout";
-import ZInput from "../ZInput/ZInput";
+import ZInputNew from "../ZInput/ZInputNew";
 import ZButton from "../ZButton/ZButton";
 import * as S from "./SignUp.style";
 import FormLayout from "../Layout/Form.layout";
-import { CARRIERS } from "../../const/CARRIERS";
+import AuthInput from "../AuthInput/AuthInput";
+import GreyAuthInput from "../AuthInput/GreyAuthInput";
+import detail from "../../assets/icon/icon_detail.png";
+// import { CARRIERS } from "../../const/CARRIERS";
 
 const SignUp = () => {
   const {
@@ -18,7 +21,6 @@ const SignUp = () => {
     formState: { errors },
   } = useForm();
   const navigate = useNavigate();
-  const [isOpenTerms, setIsOpenTerms] = useState(false);
 
   const onSubmit = (data: unknown) => {
     console.log(data);
@@ -55,12 +57,12 @@ const SignUp = () => {
       onSubmit={handleSubmit(onSubmit)}
       button={
         <ZButton type="submit" onClick={() => navigate("/success")}>
-          다음
+          회원가입 완료
         </ZButton>
       }
     >
-      <InputLayout htmlFor="id" label="아이디" className="mb-1">
-        <ZInput
+      <InputLayout htmlFor="id" label="아이디" required>
+        <ZInputNew
           type="text"
           watch={watch}
           errors={errors}
@@ -70,8 +72,8 @@ const SignUp = () => {
           placeholder="이메일 주소를 입력해주세요."
         />
       </InputLayout>
-      <InputLayout htmlFor="id" label="비밀번호" className="mb-1">
-        <ZInput
+      <InputLayout htmlFor="id" label="비밀번호" required>
+        <ZInputNew
           type="password"
           watch={watch}
           errors={errors}
@@ -81,69 +83,68 @@ const SignUp = () => {
           placeholder="영문, 숫자, 특수문자 조합 8 ~ 16자"
         />
       </InputLayout>
-      <S.VerifyWrapper>
-        <input type="text" placeholder="이름" />
+      <InputLayout htmlFor="id" label="비밀번호 확인" required>
+        <ZInputNew
+          type="password"
+          watch={watch}
+          errors={errors}
+          reset={reset}
+          fieldName="password"
+          register={pwRegister}
+          placeholder="비밀번호를 한번 더 입력해주세요"
+        />
+      </InputLayout>
+      <InputLayout htmlFor="id" label="이름" required>
+        <ZInputNew
+          type="password"
+          watch={watch}
+          errors={errors}
+          reset={reset}
+          fieldName="password"
+          register={pwRegister}
+          placeholder="예) 홍길동"
+        />
+      </InputLayout>
+      <InputLayout htmlFor="id" label="휴대폰 번호" required>
+        <AuthInput />
+      </InputLayout>
+      <InputLayout htmlFor="id" label="인증 번호" required>
+        <GreyAuthInput />
         <S.DivideLine />
-        <S.SelectWrapper>
-          <select name="" id="">
-            {CARRIERS.map((carrier) => {
-              return (
-                <option key={carrier.value} value={carrier.value}>
-                  {carrier.name}
-                </option>
-              );
-            })}
-          </select>
-        </S.SelectWrapper>
-        <S.DivideLine />
-        <input type="text" placeholder="전화번호" />
-      </S.VerifyWrapper>
-      <S.VerifyBtnWrapper>
-        <button type="button" onClick={() => navigate("/verify")}>
-          인증하기
-        </button>
-      </S.VerifyBtnWrapper>
+      </InputLayout>
+      <InputLayout htmlFor="id" label="이용약관동의" required>
+        <S.Line />
+      </InputLayout>
       <S.TermsWrapper>
         <label htmlFor="terms">
-          <input type="checkbox" id="terms" />
-          인증 약관전체 동의 (필수)
+          <S.StyledInput type="checkbox" id="terms" />
+          아래 약관에 모두 동의합니다.
         </label>
-        <button type="button" onClick={() => setIsOpenTerms((prev) => !prev)}>
-          더보기
-        </button>
+        <S.LightDivideLine />
+        <S.StyledLabel htmlFor="terms">
+          <S.StyledInput type="checkbox" id="terms" />
+          [필수] 이용 약관 필수 동의
+          <S.DetailBtn src={detail} />
+        </S.StyledLabel>
+        <S.StyledLabel htmlFor="terms">
+          <S.StyledInput type="checkbox" id="terms" />
+          [필수] 개인정보 처리방침 필수 동의
+          <S.DetailBtn src={detail} />
+        </S.StyledLabel>
+        <S.StyledLabel htmlFor="terms">
+          <S.StyledInput type="checkbox" id="terms" />
+          [필수] 만 14세 이상임에 필수 동의
+          <S.DetailBtn src={detail} />
+        </S.StyledLabel>
       </S.TermsWrapper>
-      {isOpenTerms && (
-        <S.TermsDetailWrapper>
-          <S.TermsDetail>
-            <label htmlFor="terms">
-              <input type="checkbox" id="terms" />
-              개인정보 처리방침 필수 동의
-            </label>
-          </S.TermsDetail>
-          <S.DivideLine />
-          <S.TermsDetail>
-            <S.TermsDetailTxt>
-              여기에는 어떤 내용이 들어갈거에요. 매우 긴 내용이 계속해서 들어갈
-              거에요. 영원히. 사람들이 보기싫게. 야, 여기에는 어떤 내용이
-              들어갈거에요. 매우 긴 내용이 계속해서 들어갈 거에요. 영원히.
-              변수창출 사람들이 보기싫게. 여기에는 어떤 내용이 들어갈거에요.
-              매우 긴 내용이 계속해서 들어갈 거에요. 영원히. 사람들이 보기싫게.
-              여기에는 어떤 내용이 들어갈거에요. 매우 긴 내용이 계속해서 들어갈
-              거에요. 영원히. 사람들이 보기싫게. 여기에는 어떤 내용이 슉슈슉
-              들어갈거에요. 매우 긴 내용이 계속해서 들어갈 거에요. 영원히.
-              사람들이 보기싫게. 여기에는 어떤 코카콜라 내용이 들어갈거에요.
-              매우 긴 콜라 내용이 계속해서 들어갈 거에요. 영원히. 사람들이
-              보기싫게. 여기에는 어떤 내용이 들어갈거에요. 매우 긴 내용이
-              계속해서 들어갈 거에요. 마구잡이 영원히. 사람들이 보기싫게.
-              여기에는 어떤 내용이 막 들어갈거에요. 매우 긴 내용이 계속해서
-              들어갈 거에요. 영원히. 사람들이 보기싫게. 여기에는 어떤 내용이
-              들어갈거에요. 매우 긴 내용이 계속해서 들어갈 거에요. 영원히.
-              사람들이 보기싫게. 여기에는 투루크 막토 어떤 내용이 들어갈거에요.
-              매우 긴 내용이 계속해서 들어갈 거에요. 영원히. 사람들이 보기싫게.
-            </S.TermsDetailTxt>
-          </S.TermsDetail>
-        </S.TermsDetailWrapper>
-      )}
+      {/* <S.TermsDetailWrapper>
+        <S.TermsDetail>
+          <label htmlFor="terms">
+            <input type="checkbox" id="terms" />
+            개인정보 처리방침 필수 동의
+          </label>
+        </S.TermsDetail>
+      </S.TermsDetailWrapper> */}
     </FormLayout>
   );
 };
