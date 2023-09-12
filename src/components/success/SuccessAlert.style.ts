@@ -14,7 +14,7 @@ export const Strong = styled.strong`
   display: block;
   margin-top: 15px;
   margin-bottom: 50px;
-  font-size: ${({ theme }) => theme.SIZE.font20};
+  font-size: ${({ theme }) => theme.FONT.size20};
 `;
 
 export const Logo = styled.img`

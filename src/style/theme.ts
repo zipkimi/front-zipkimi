@@ -32,13 +32,16 @@ const COLOR = {
   red: "#EB1B0E",
 };
 
-const SIZE = {
-  font12: "0.86rem",
-  font13: "0.93rem",
-  font15: "1.07rem",
-  font16: "1.15rem",
-  font18: "1.28rem",
-  font20: "1.43rem",
+const FONT = {
+  regular: 400,
+  medium: 500,
+  bold: 700,
+  size12: "0.86rem",
+  size13: "0.93rem",
+  size15: "1.07rem",
+  size16: "1.15rem",
+  size18: "1.28rem",
+  size20: "1.43rem",
 };
 
 const ROUND = {
@@ -54,7 +57,7 @@ const ROUND = {
 const theme = {
   TEXT,
   COLOR,
-  SIZE,
+  FONT,
   ROUND,
 };
 
