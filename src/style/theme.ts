@@ -22,8 +22,9 @@ const TEXT = {
 };
 
 const COLOR = {
-  original: "#5530E0",
-  originalBright: "#3A00E545",
+  original: "#5330E0",
+  originalBright: "#F1EDFF",
+  whiteGray: "#F2F2F2",
   lightGray: "#DCDCDC",
   gray: "#BCBCBC",
   darkGray: "#949494",

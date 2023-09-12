@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.02em;
   }
 
   html, body, div, span, applet, object, iframe,
