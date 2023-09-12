@@ -7,6 +7,18 @@ const TEXT = {
     margin: -1px;
     overflow: hidden;
   `,
+  text13: `
+    font-size: 0.93rem;
+    line-height: 1.61;
+  `,
+  text15: `
+    font-size: 1.07rem;
+    line-height: 1.538;
+  `,
+  text18: `
+    font-size: 1.28rem;
+    line-height: 1.45;
+  `,
 };
 
 const COLOR = {

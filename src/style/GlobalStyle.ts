@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     border: 0;
     font-size: 14px;
+    line-height: 1.57;
     vertical-align: baseline;
   }
 

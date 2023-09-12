@@ -7,12 +7,12 @@ export const Wrapper = styled.div`
 export const Title = styled.strong`
   display: block;
   margin-bottom: 6px;
-  font-size: ${({ theme }) => theme.SIZE.font18};
+  ${({ theme }) => theme.TEXT.text18}
   font-weight: bold;
 `;
 
 export const SubTxt = styled.small`
-  font-size: ${({ theme }) => theme.SIZE.font13};
+  ${({ theme }) => theme.TEXT.text13}
   color: ${({ theme }) => theme.COLOR.darkGray};
 `;
 

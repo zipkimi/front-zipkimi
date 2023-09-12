@@ -24,7 +24,6 @@ export const Logo = styled.img`
 `;
 
 export const Celebration = styled.p`
-  font-size: ${({ theme }) => theme.SIZE.font15};
+  ${({ theme }) => theme.TEXT.text15}
   color: ${({ theme }) => theme.COLOR.dark};
-  line-height: 23px;
 `;

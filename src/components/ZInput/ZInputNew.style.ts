@@ -19,7 +19,7 @@ export const Input = styled.input<{ isError?: boolean }>`
   width: 100%;
   height: 48px;
   padding: 14px 80px 14px 14px;
-  font-size: ${({ theme }) => theme.SIZE.font15};
+  ${({ theme }) => theme.TEXT.text15}
   outline: none;
 `;
 
@@ -60,5 +60,5 @@ export const ImgCheck = styled.img`
 export const ErrTxt = styled.p`
   margin-top: 6px;
   color: ${({ theme }) => theme.COLOR.red};
-  font-size: ${({ theme }) => theme.SIZE.font13};
+  ${({ theme }) => theme.TEXT.text13}
 `;
