@@ -15,6 +15,10 @@ const Index = () => {
           <ImgLogo src={Logo} alt="집킴이 로고" />
           <CreateAccountBtnGroup />
           <BtnSingUp />
+          <iframe
+            title="loading"
+            src="https://lottie.host/?file=c8897eff-84cf-4562-9a04-255ae2b1f38f/7BXxoV87R0.json"
+          />
         </div>
       </ContentsWrapper>
     </BodyStyle>
