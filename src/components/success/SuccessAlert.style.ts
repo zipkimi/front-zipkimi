@@ -14,7 +14,7 @@ export const Strong = styled.strong`
   display: block;
   margin-top: 15px;
   margin-bottom: 50px;
-  font-size: ${({ theme }) => theme.SIZE.font20};
+  font-size: ${({ theme }) => theme.FONT.size20};
 `;
 
 export const Logo = styled.img`
@@ -24,7 +24,6 @@ export const Logo = styled.img`
 `;
 
 export const Celebration = styled.p`
-  font-size: ${({ theme }) => theme.SIZE.font15};
+  ${({ theme }) => theme.TEXT.text15}
   color: ${({ theme }) => theme.COLOR.dark};
-  line-height: 23px;
 `;

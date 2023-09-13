@@ -37,7 +37,7 @@ const Img = styled.img`
 `;
 
 const Title = styled.h1`
-  font-size: ${({ theme }) => theme.SIZE.font18};
+  ${({ theme }) => theme.TEXT.text18}
 `;
 
 const LayoutBox = styled.div`

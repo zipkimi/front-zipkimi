@@ -1,10 +1,10 @@
 import { createGlobalStyle } from "styled-components";
-import "../assets/font/font.css";
 
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.02em;
   }
 
   html, body, div, span, applet, object, iframe,
@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     border: 0;
     font-size: 14px;
+    line-height: 1.57;
     vertical-align: baseline;
   }
 

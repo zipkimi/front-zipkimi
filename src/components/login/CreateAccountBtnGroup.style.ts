@@ -13,7 +13,7 @@ export const NaverBtn = styled.button`
   border-radius: ${({ theme }) => theme.ROUND.xs};
   width: 100%;
   padding: 14px;
-  font-size: ${({ theme }) => theme.SIZE.font16};
+  font-size: ${({ theme }) => theme.FONT.size16};
   color: white;
   outline: none;
   background-color: #03c75a;
@@ -38,7 +38,7 @@ export const KakaoBtn = styled(NaverBtn)`
 export const MoreTxt = styled.span`
   position: relative;
   text-align: center;
-  font-size: ${({ theme }) => theme.SIZE.font12};
+  font-size: ${({ theme }) => theme.FONT.size12};
   color: ${({ theme }) => theme.COLOR.darkGray};
   &::before,
   &::after {
