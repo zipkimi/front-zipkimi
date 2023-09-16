@@ -1,12 +1,18 @@
-import CountdownTimer from "../CountdownTimer/CountdownTimer";
+import React, { useState } from "react";
 import * as S from "./AuthInput.style";
 
-const AuthInput = () => {
+interface AuthInputProps {
+  showTimer: boolean;
+  onButtonClick: () => void;
+}
+
+const AuthInput: React.FC<AuthInputProps> = ({ showTimer, onButtonClick }) => {
   return (
     <S.Box>
       <S.TypeNumber placeholder="휴대전화 번호를 입력해주세요" />
-      <CountdownTimer showTimer />
-      <S.BoxButton type="button">인증</S.BoxButton>
+      <S.BoxButton type="button" onClick={onButtonClick} showTimer={showTimer}>
+        {showTimer ? "재발송" : "인증"}
+      </S.BoxButton>
     </S.Box>
   );
 };

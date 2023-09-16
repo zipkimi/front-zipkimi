@@ -1,12 +1,19 @@
+import React from "react";
 import CountdownTimer from "../CountdownTimer/CountdownTimer";
 import * as S from "./AuthInputConfirm.style";
 
-const AuthInputConfirm = () => {
+interface AuthInputConfirmProps {
+  showTimer: boolean;
+}
+
+const AuthInputConfirm: React.FC<AuthInputConfirmProps> = ({ showTimer }) => {
   return (
     <S.Box>
       <S.TypeNumber placeholder="인증 번호를 입력해주세요" />
-      <CountdownTimer showTimer={false} />
-      <S.BoxButton type="button">확인</S.BoxButton>
+      {showTimer && <CountdownTimer showTimer={true} />}{" "}
+      <S.BoxButton type="button" showTimer={showTimer}>
+        확인
+      </S.BoxButton>
     </S.Box>
   );
 };

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Box = styled.div`
   display: flex;
@@ -26,11 +26,19 @@ export const TypeNumber = styled.input.attrs({
   border: none;
 `;
 
-export const BoxButton = styled.button`
+export const BoxButton = styled.button<{ showTimer: boolean }>`
   width: 75px;
   height: 48px;
   background-color: #3617cd;
   border-radius: 0px 4px 4px 0px;
   margin-left: 14px;
   color: white;
+
+  ${(props) =>
+    props.showTimer &&
+    css`
+      background: none;
+      border-left: 1px solid #dcdcdc;
+      color: black;
+    `}
 `;
