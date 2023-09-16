@@ -45,6 +45,7 @@ export const Button = styled.button<{
   height: ${({ height }) => `${height}px`};
   padding: 14px 16px;
   font-size: 1rem;
+  font-weight: ${({ theme }) => theme.FONT.medium};
   color: ${({ theme, outline, colored }) =>
     outline ? theme.COLOR[colored] : "white"};
   outline: none;

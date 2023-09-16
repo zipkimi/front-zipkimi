@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 import IBefore from "../../assets/icon/icon_before.png";
 
 type Props = {
@@ -8,11 +9,13 @@ type Props = {
 };
 
 const HeaderLayout = ({ btn, title }: Props) => {
+  const navigate = useNavigate();
+
   return (
     <Header>
       {btn !== "back" && btn}
       {btn === "back" && (
-        <button type="button">
+        <button type="button" onClick={() => navigate(-1)}>
           <Img src={IBefore} alt="뒤로가기" />
         </button>
       )}
@@ -37,7 +40,8 @@ const Img = styled.img`
 `;
 
 const Title = styled.h1`
-  ${({ theme }) => theme.TEXT.text18}
+  ${({ theme }) => theme.TEXT.text18};
+  font-weight: ${({ theme }) => theme.FONT.regular};
 `;
 
 const LayoutBox = styled.div`

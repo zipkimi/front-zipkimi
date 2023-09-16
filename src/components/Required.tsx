@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import IRequired from "../assets/icon/icon_required.png";
 
 const Required = () => {
-  return <Star>*</Star>;
+  return <Img src={IRequired} alt="필수" />;
 };
 
 export default Required;
 
-const Star = styled.span`
-  color: ${({ theme }) => theme.COLOR.original};
-  font-size: ${({ theme }) => theme.SIZE.lg};
+const Img = styled.img`
+  width: 8px;
+  height: 8px;
 `;

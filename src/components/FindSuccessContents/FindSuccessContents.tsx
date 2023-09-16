@@ -1,5 +1,6 @@
 import React from "react";
 import * as S from "./FindSuccessContents.style";
+import IUser from "../../assets/icon/icon_user.png";
 
 const FindSuccessContents = () => {
   return (
@@ -9,7 +10,7 @@ const FindSuccessContents = () => {
         <S.SubTxt>아이디 확인 후 로그인해주세요.</S.SubTxt>
       </p>
       <S.EmailWrapper>
-        <img src="" alt="이메일" />
+        <img src={IUser} alt="이메일" />
         <address>abc@gmail.com</address>
       </S.EmailWrapper>
     </S.Wrapper>

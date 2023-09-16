@@ -19,7 +19,8 @@ export const Input = styled.input<{ isError?: boolean }>`
   width: 100%;
   height: 48px;
   padding: 14px 80px 14px 14px;
-  ${({ theme }) => theme.TEXT.text15}
+  ${({ theme }) => theme.TEXT.text15};
+  font-weight: ${({ theme }) => theme.FONT.medium};
   outline: none;
 `;
 

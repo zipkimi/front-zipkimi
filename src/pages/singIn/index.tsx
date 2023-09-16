@@ -62,6 +62,7 @@ const Index = () => {
       >
         <InputLayout htmlFor="email" label="이메일">
           <ZInputNew
+            type="email"
             watch={watch}
             errors={errors}
             reset={reset}
