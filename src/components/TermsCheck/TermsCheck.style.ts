@@ -18,7 +18,6 @@ export const Title = styled.label`
   display: flex;
   margin-bottom: 19px;
   font-weight: ${({ theme }) => theme.FONT.medium};
-  color: #555555;
 `;
 
 export const TermsWrapper = styled.div`

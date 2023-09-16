@@ -27,5 +27,4 @@ const Label = styled.label`
   display: flex;
   margin-bottom: 10px;
   font-weight: ${({ theme }) => theme.FONT.medium};
-  color: #555555;
 `;

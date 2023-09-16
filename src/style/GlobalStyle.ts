@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 14px;
     line-height: 1.57;
     vertical-align: baseline;
+    color: #333333;
   }
 
   /* HTML5 display-role reset for older browsers */
