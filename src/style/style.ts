@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const BodyStyle = styled.div`
+  min-height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   overflow: auto;
   -webkit-overflow-scrolling: touch;

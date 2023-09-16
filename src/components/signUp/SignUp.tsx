@@ -3,11 +3,10 @@ import { useNavigate } from "react-router-dom";
 import InputLayout from "../InputLayout/Input.layout";
 import ZInputNew from "../ZInput/ZInputNew";
 import ZButton from "../ZButton/ZButton";
-import * as S from "./SignUp.style";
 import FormLayout from "../Layout/Form.layout";
 import AuthInput from "../AuthInput/AuthInput";
 import AuthInputConfirm from "../AuthInputConfirm/AuthInputConfirm";
-import detail from "../../assets/icon/icon_detail.png";
+import TermsCheck from "../TermsCheck/TermsCheck";
 
 const SignUp = () => {
   const {
@@ -117,41 +116,8 @@ const SignUp = () => {
       </InputLayout>
       <InputLayout htmlFor="auth" label="인증 번호" required>
         <AuthInputConfirm />
-        <S.DivideLine />
       </InputLayout>
-      <InputLayout htmlFor="terms" label="이용약관동의" required>
-        <S.Line />
-      </InputLayout>
-      <S.TermsWrapper>
-        <label htmlFor="terms_1">
-          <S.StyledInput type="checkbox" id="terms_1" />
-          아래 약관에 모두 동의합니다.
-        </label>
-        <S.LightDivideLine />
-        <S.StyledLabel htmlFor="terms_2">
-          <S.StyledInput type="checkbox" id="terms_2" />
-          [필수] 이용 약관 필수 동의
-          <S.DetailBtn src={detail} />
-        </S.StyledLabel>
-        <S.StyledLabel htmlFor="terms_3">
-          <S.StyledInput type="checkbox" id="terms_3" />
-          [필수] 개인정보 처리방침 필수 동의
-          <S.DetailBtn src={detail} />
-        </S.StyledLabel>
-        <S.StyledLabel htmlFor="terms_4">
-          <S.StyledInput type="checkbox" id="terms_4" />
-          [필수] 만 14세 이상임에 필수 동의
-          <S.DetailBtn src={detail} />
-        </S.StyledLabel>
-      </S.TermsWrapper>
-      {/* <S.TermsDetailWrapper>
-        <S.TermsDetail>
-          <label htmlFor="terms">
-            <input type="checkbox" id="terms" />
-            개인정보 처리방침 필수 동의
-          </label>
-        </S.TermsDetail>
-      </S.TermsDetailWrapper> */}
+      <TermsCheck />
     </FormLayout>
   );
 };
