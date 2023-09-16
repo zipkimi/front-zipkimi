@@ -15,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     setScreenSize();
-  });
+  }, [window.innerHeight, window.innerWidth]);
 
   return (
     <QueryClientProvider client={queryClient}>

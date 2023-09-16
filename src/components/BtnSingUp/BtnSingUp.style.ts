@@ -5,7 +5,7 @@ export const P = styled.p`
   text-align: center;
   ${({ theme }) => theme.TEXT.text13}
   color: ${({ theme }) => theme.COLOR.dark};
-  a {
+  button {
     margin-left: 4px;
     ${({ theme }) => theme.TEXT.text13}
     color: ${({ theme }) => theme.COLOR.original};

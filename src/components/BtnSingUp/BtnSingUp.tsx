@@ -9,9 +9,9 @@ const BtnSingUp = () => {
   return (
     <S.P>
       계정이 없으신가요?{" "}
-      <a href="#new" onClick={() => navigate(ROUTES.SIGNUP)}>
+      <button type="button" onClick={() => navigate(ROUTES.SIGNUP)}>
         회원가입
-      </a>
+      </button>
     </S.P>
   );
 };

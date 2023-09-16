@@ -31,7 +31,6 @@ const ZTab = ({ tabs, onChangeTab, defaultTab }: Props) => {
           onClick={() => selectTab(tab)}
         >
           <span>{tab}</span>
-          <span aria-hidden="true" />
         </S.TabBtn>
       ))}
     </S.TabWrapper>

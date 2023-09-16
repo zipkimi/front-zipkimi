@@ -24,7 +24,7 @@ const InputForm = ({ htmlFor, label, required, children, ...props }: Props) => {
 export default InputForm;
 
 const Label = styled.label`
-  display: block;
-  color: #555555;
+  display: flex;
   margin-bottom: 10px;
+  font-weight: ${({ theme }) => theme.FONT.medium};
 `;

@@ -11,7 +11,8 @@ export const TabBtn = styled.button<{ isSelected: boolean }>`
       isSelected ? theme.COLOR.original : theme.COLOR.gray};
   width: 100%;
   padding-bottom: 10px;
-  ${({ theme }) => theme.TEXT.text13}
+  ${({ theme }) => theme.TEXT.text13};
+  font-weight: ${({ theme }) => theme.FONT.medium};
   color: ${({ theme, isSelected }) =>
     isSelected ? theme.COLOR.original : theme.COLOR.gray};
 `;

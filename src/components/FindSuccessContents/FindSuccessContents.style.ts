@@ -30,5 +30,6 @@ export const EmailWrapper = styled.div`
     display: inline-block;
     text-decoration: none;
     font-style: normal;
+    font-weight: ${({ theme }) => theme.FONT.medium};
   }
 `;

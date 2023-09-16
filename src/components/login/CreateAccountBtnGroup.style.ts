@@ -14,6 +14,7 @@ export const NaverBtn = styled.button`
   width: 100%;
   padding: 14px;
   font-size: ${({ theme }) => theme.FONT.size16};
+  font-weight: ${({ theme }) => theme.FONT.medium};
   color: white;
   outline: none;
   background-color: #03c75a;

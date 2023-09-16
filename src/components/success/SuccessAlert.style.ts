@@ -15,6 +15,7 @@ export const Strong = styled.strong`
   margin-top: 15px;
   margin-bottom: 50px;
   font-size: ${({ theme }) => theme.FONT.size20};
+  font-weight: ${({ theme }) => theme.FONT.medium};
 `;
 
 export const Logo = styled.img`

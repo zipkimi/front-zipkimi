@@ -1,15 +1,12 @@
-// import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import InputLayout from "../InputLayout/Input.layout";
 import ZInputNew from "../ZInput/ZInputNew";
 import ZButton from "../ZButton/ZButton";
-import * as S from "./SignUp.style";
 import FormLayout from "../Layout/Form.layout";
 import AuthInput from "../AuthInput/AuthInput";
 import AuthInputConfirm from "../AuthInputConfirm/AuthInputConfirm";
-import detail from "../../assets/icon/icon_detail.png";
-// import { CARRIERS } from "../../const/CARRIERS";
+import TermsCheck from "../TermsCheck/TermsCheck";
 
 const SignUp = () => {
   const {
@@ -33,6 +30,7 @@ const SignUp = () => {
         { shouldFocus: true },
       );
     }
+    navigate("/success");
   };
 
   const emailRegister = register("email", {
@@ -51,19 +49,27 @@ const SignUp = () => {
     },
   });
 
+  const rePwRegister = register("rePassword", {
+    required: { value: true, message: "비밀번호를 입력해주세요." },
+    pattern: {
+      value: /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+]).{8}/,
+      message: "비밀번호 형식을 확인해주세요.",
+    },
+  });
+
+  const name = register("name", {
+    required: { value: true, message: "이름을 입력해주세요." },
+  });
+
   return (
     <FormLayout
       action=""
       onSubmit={handleSubmit(onSubmit)}
-      button={
-        <ZButton type="submit" onClick={() => navigate("/success")}>
-          회원가입 완료
-        </ZButton>
-      }
+      button={<ZButton type="submit">회원가입 완료</ZButton>}
     >
       <InputLayout htmlFor="id" label="아이디" required>
         <ZInputNew
-          type="text"
+          type="email"
           watch={watch}
           errors={errors}
           reset={reset}
@@ -72,7 +78,7 @@ const SignUp = () => {
           placeholder="이메일 주소를 입력해주세요."
         />
       </InputLayout>
-      <InputLayout htmlFor="id" label="비밀번호" required>
+      <InputLayout htmlFor="password" label="비밀번호" required>
         <ZInputNew
           type="password"
           watch={watch}
@@ -83,68 +89,35 @@ const SignUp = () => {
           placeholder="영문, 숫자, 특수문자 조합 8 ~ 16자"
         />
       </InputLayout>
-      <InputLayout htmlFor="id" label="비밀번호 확인" required>
+      <InputLayout htmlFor="rePassword" label="비밀번호 확인" required>
         <ZInputNew
           type="password"
           watch={watch}
           errors={errors}
           reset={reset}
-          fieldName="password"
-          register={pwRegister}
+          fieldName="rePassword"
+          register={rePwRegister}
           placeholder="비밀번호를 한번 더 입력해주세요"
         />
       </InputLayout>
-      <InputLayout htmlFor="id" label="이름" required>
+      <InputLayout htmlFor="name" label="이름" required>
         <ZInputNew
-          type="password"
+          type="text"
           watch={watch}
           errors={errors}
           reset={reset}
-          fieldName="password"
-          register={pwRegister}
+          fieldName="name"
+          register={name}
           placeholder="예) 홍길동"
         />
       </InputLayout>
-      <InputLayout htmlFor="id" label="휴대폰 번호" required>
+      <InputLayout htmlFor="phone" label="휴대폰 번호" required>
         <AuthInput />
       </InputLayout>
-      <InputLayout htmlFor="id" label="인증 번호" required>
+      <InputLayout htmlFor="auth" label="인증 번호" required>
         <AuthInputConfirm />
-        <S.DivideLine />
       </InputLayout>
-      <InputLayout htmlFor="id" label="이용약관동의" required>
-        <S.Line />
-      </InputLayout>
-      <S.TermsWrapper>
-        <label htmlFor="terms">
-          <S.StyledInput type="checkbox" id="terms" />
-          아래 약관에 모두 동의합니다.
-        </label>
-        <S.LightDivideLine />
-        <S.StyledLabel htmlFor="terms">
-          <S.StyledInput type="checkbox" id="terms" />
-          [필수] 이용 약관 필수 동의
-          <S.DetailBtn src={detail} />
-        </S.StyledLabel>
-        <S.StyledLabel htmlFor="terms">
-          <S.StyledInput type="checkbox" id="terms" />
-          [필수] 개인정보 처리방침 필수 동의
-          <S.DetailBtn src={detail} />
-        </S.StyledLabel>
-        <S.StyledLabel htmlFor="terms">
-          <S.StyledInput type="checkbox" id="terms" />
-          [필수] 만 14세 이상임에 필수 동의
-          <S.DetailBtn src={detail} />
-        </S.StyledLabel>
-      </S.TermsWrapper>
-      {/* <S.TermsDetailWrapper>
-        <S.TermsDetail>
-          <label htmlFor="terms">
-            <input type="checkbox" id="terms" />
-            개인정보 처리방침 필수 동의
-          </label>
-        </S.TermsDetail>
-      </S.TermsDetailWrapper> */}
+      <TermsCheck />
     </FormLayout>
   );
 };

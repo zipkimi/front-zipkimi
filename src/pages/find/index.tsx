@@ -90,6 +90,7 @@ const Index = () => {
           <>
             <InputLayout htmlFor="email" label="가입한 이메일 주소" required>
               <ZInputNew
+                type="email"
                 watch={watch}
                 errors={errors}
                 reset={reset}
