@@ -14,7 +14,8 @@ export const InputWrapper = styled.div<{ isFocus: boolean }>`
 
 export const Input = styled.input<{ isError?: boolean }>`
   border: 1px solid
-    ${({ theme, isError }) => (isError ? theme.COLOR.red : theme.COLOR.gray)};
+    ${({ theme, isError }) =>
+      isError ? theme.COLOR.red : theme.COLOR.lightGray};
   border-radius: ${({ theme }) => theme.ROUND.xs};
   width: 100%;
   height: 48px;
