@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import * as S from "./AuthInput.style";
 
-interface AuthInputProps {
+type Props = {
   showTimer: boolean;
   onButtonClick: () => void;
-}
+};
 
-const AuthInput: React.FC<AuthInputProps> = ({ showTimer, onButtonClick }) => {
+const AuthInput = ({ showTimer, onButtonClick }: Props) => {
   return (
     <S.Box>
       <S.TypeNumber placeholder="휴대전화 번호를 입력해주세요" />

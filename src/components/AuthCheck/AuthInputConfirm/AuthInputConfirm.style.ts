@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 
 export const Box = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 48px;
@@ -14,11 +13,11 @@ export const Box = styled.div`
 export const TypeNumber = styled.input.attrs({
   placeholderTextcolor: "#bcbcbc",
 })`
-  /* width: 100%; */
-  flex: 2 1 auto;
+  /* width: 150px; */
+  flex: 1;
   line-height: 22px;
   height: 22px;
-  margin: 13px 0px 13px 14px;
+  margin: 13px 0 13px 14px;
   font-size: 15px;
   color: Black;
   font-weight: 500;
@@ -28,17 +27,14 @@ export const TypeNumber = styled.input.attrs({
 
 export const BoxButton = styled.button<{ showTimer: boolean }>`
   width: 75px;
-  height: 48px;
-  background-color: #3617cd;
-  border-radius: 0px 4px 4px 0px;
-  margin-left: 14px;
-  color: white;
-
+  height: 46px;
+  background-color: #f0f0f0f0;
+  border-radius: 0 4px 4px 0;
+  color: #bcbcbc;
   ${(props) =>
     props.showTimer &&
     css`
-      background: none;
-      border-left: 1px solid #dcdcdc;
-      color: black;
+      background-color: #3617cd;
+      color: white;
     `}
 `;

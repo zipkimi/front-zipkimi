@@ -4,18 +4,10 @@ import InputLayout from "../InputLayout/Input.layout";
 import ZInputNew from "../ZInput/ZInputNew";
 import ZButton from "../ZButton/ZButton";
 import FormLayout from "../Layout/Form.layout";
-import AuthInput from "../AuthInput/AuthInput";
-import AuthInputConfirm from "../AuthInputConfirm/AuthInputConfirm";
 import TermsCheck from "../TermsCheck/TermsCheck";
-import { useState } from "react";
+import AuthCheck from "../AuthCheck/AuthCheck";
 
 const SignUp = () => {
-  const [showTimer, setShowTimer] = useState(false);
-
-  const handleButtonClick = () => {
-    setShowTimer(!showTimer);
-  };
-
   const {
     watch,
     reset,
@@ -118,12 +110,7 @@ const SignUp = () => {
           placeholder="예) 홍길동"
         />
       </InputLayout>
-      <InputLayout htmlFor="phone" label="휴대폰 번호" required>
-        <AuthInput showTimer={showTimer} onButtonClick={handleButtonClick} />
-      </InputLayout>
-      <InputLayout htmlFor="auth" label="인증 번호" required>
-        <AuthInputConfirm showTimer={showTimer} />
-      </InputLayout>
+      <AuthCheck />
       <TermsCheck />
     </FormLayout>
   );

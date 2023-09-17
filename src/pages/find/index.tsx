@@ -9,8 +9,7 @@ import InputLayout from "../../components/InputLayout/Input.layout";
 import ZInputNew from "../../components/ZInput/ZInputNew";
 import { BodyStyle } from "../../style/style";
 import { ROUTES } from "../../const/ROUTES";
-import AuthInput from "../../components/AuthInput/AuthInput";
-import AuthInputConfirm from "../../components/AuthInputConfirm/AuthInputConfirm";
+import AuthCheck from "../../components/AuthCheck/AuthCheck";
 
 const Index = () => {
   const [tab, setTab] = useState("아이디 찾기");
@@ -77,12 +76,7 @@ const Index = () => {
         />
         {tab === "아이디 찾기" && (
           <>
-            <InputLayout htmlFor="phone" label="휴대폰 번호" required>
-              <AuthInput />
-            </InputLayout>
-            <InputLayout htmlFor="auth" label="인증 번호" required>
-              <AuthInputConfirm />
-            </InputLayout>
+            <AuthCheck />
             <ZButton isRound="xs">아이디 찾기</ZButton>
           </>
         )}
@@ -99,12 +93,7 @@ const Index = () => {
                 placeholder="이메일 주소를 입력해주세요"
               />
             </InputLayout>
-            <InputLayout htmlFor="phone" label="휴대폰 번호" required>
-              <AuthInput />
-            </InputLayout>
-            <InputLayout htmlFor="auth" label="인증 번호" required>
-              <AuthInputConfirm />
-            </InputLayout>
+            <AuthCheck />
             <ZButton onClick={() => navigate(ROUTES.RESET)} isRound="xs">
               비밀번호 찾기
             </ZButton>

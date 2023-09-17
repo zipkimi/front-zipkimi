@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./CountdownTimer.style";
 
-interface CountdownTimerProps {
+type Props = {
   showTimer: boolean;
-}
+};
 
-const CountdownTimer: React.FC<CountdownTimerProps> = ({ showTimer }) => {
+const CountdownTimer = ({ showTimer }: Props) => {
   const [timeRemaining, setTimeRemaining] = useState(5 * 60);
 
   useEffect(() => {

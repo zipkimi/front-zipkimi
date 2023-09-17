@@ -5,7 +5,7 @@ export const TimerBox = styled.div`
   justify-content: flex-end;
   /* width: 100%; */
   height: 22px;
-  margin: 13px 0px 13px 0px;
+  margin-right: 14px;
 `;
 
 export const Time = styled.p`
