@@ -7,8 +7,15 @@ import FormLayout from "../Layout/Form.layout";
 import AuthInput from "../AuthInput/AuthInput";
 import AuthInputConfirm from "../AuthInputConfirm/AuthInputConfirm";
 import TermsCheck from "../TermsCheck/TermsCheck";
+import { useState } from "react";
 
 const SignUp = () => {
+  const [showTimer, setShowTimer] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowTimer(!showTimer);
+  };
+
   const {
     watch,
     reset,
@@ -112,10 +119,10 @@ const SignUp = () => {
         />
       </InputLayout>
       <InputLayout htmlFor="phone" label="휴대폰 번호" required>
-        <AuthInput />
+        <AuthInput showTimer={showTimer} onButtonClick={handleButtonClick} />
       </InputLayout>
       <InputLayout htmlFor="auth" label="인증 번호" required>
-        <AuthInputConfirm />
+        <AuthInputConfirm showTimer={showTimer} />
       </InputLayout>
       <TermsCheck />
     </FormLayout>
