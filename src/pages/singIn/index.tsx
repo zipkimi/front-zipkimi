@@ -4,7 +4,7 @@ import styled from "styled-components";
 import HeaderLayout from "../../components/Layout/Header.layout";
 import { BodyStyle } from "../../style/style";
 import InputLayout from "../../components/InputLayout/Input.layout";
-import ZInputNew from "../../components/ZInput/ZInputNew";
+import ZInput from "../../components/ZInput/ZInput";
 import FormLayout from "../../components/Layout/Form.layout";
 import ZButton from "../../components/ZButton/ZButton";
 import BtnSingUp from "../../components/BtnSingUp/BtnSingUp";
@@ -61,8 +61,7 @@ const Index = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <InputLayout htmlFor="email" label="이메일">
-          <ZInputNew
-            type="email"
+          <ZInput
             watch={watch}
             errors={errors}
             reset={reset}
@@ -72,7 +71,7 @@ const Index = () => {
           />
         </InputLayout>
         <InputLayout htmlFor="password" label="비밀번호">
-          <ZInputNew
+          <ZInput
             watch={watch}
             errors={errors}
             reset={reset}

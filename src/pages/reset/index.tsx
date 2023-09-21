@@ -5,7 +5,7 @@ import { BodyStyle } from "../../style/style";
 import HeaderLayout from "../../components/Layout/Header.layout";
 import FormLayout from "../../components/Layout/Form.layout";
 import InputLayout from "../../components/InputLayout/Input.layout";
-import ZInputNew from "../../components/ZInput/ZInputNew";
+import ZInput from "../../components/ZInput/ZInput";
 import ZButton from "../../components/ZButton/ZButton";
 import { ROUTES } from "../../const/ROUTES";
 
@@ -54,7 +54,7 @@ const Index = () => {
       <HeaderLayout title="찾기" btn="back" />
       <FormLayout button="" onSubmit={handleSubmit(onSubmit)}>
         <InputLayout htmlFor="password" label="새 비밀번호" required>
-          <ZInputNew
+          <ZInput
             watch={watch}
             errors={errors}
             reset={reset}
@@ -64,7 +64,7 @@ const Index = () => {
           />
         </InputLayout>
         <InputLayout htmlFor="rePassword" label="새 비밀번호 확인" required>
-          <ZInputNew
+          <ZInput
             watch={watch}
             errors={errors}
             reset={reset}

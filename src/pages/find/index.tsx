@@ -6,7 +6,7 @@ import HeaderLayout from "../../components/Layout/Header.layout";
 import FormLayout from "../../components/Layout/Form.layout";
 import ZTab from "../../components/ZTab/ZTab";
 import InputLayout from "../../components/InputLayout/Input.layout";
-import ZInputNew from "../../components/ZInput/ZInputNew";
+import ZInput from "../../components/ZInput/ZInput";
 import { BodyStyle } from "../../style/style";
 import { ROUTES } from "../../const/ROUTES";
 import AuthCheck from "../../components/AuthCheck/AuthCheck";
@@ -83,8 +83,7 @@ const Index = () => {
         {tab === "비밀번호 찾기" && (
           <>
             <InputLayout htmlFor="email" label="가입한 이메일 주소" required>
-              <ZInputNew
-                type="email"
+              <ZInput
                 watch={watch}
                 errors={errors}
                 reset={reset}

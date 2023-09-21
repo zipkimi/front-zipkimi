@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
-  margin-top: 26px;
+  margin: 26px 0 10px 0;
 `;
 
 export const DivideLine = styled.div`
@@ -48,7 +48,7 @@ export const Line = styled.div`
 export const DetailTermsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
 `;
 
 export const Label = styled.label`
@@ -68,6 +68,7 @@ export const CheckBox = styled.input`
   margin: 0 8px 0 0;
 
   &:checked {
+    border: 1px solid ${({ theme }) => theme.COLOR.original};
     background-color: ${({ theme }) => theme.COLOR.original};
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e");
   }

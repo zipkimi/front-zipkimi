@@ -25,7 +25,7 @@ export const BoxButton = styled.button<{ showTimer: boolean }>`
   border-radius: 0 4px 4px 0;
   min-width: 75px;
   height: 48px;
-  ${({ theme }) => theme.FONT.size15};
+  ${({ theme }) => theme.TEXT.text15};
   font-weight: ${({ theme }) => theme.FONT.medium};
   color: white;
   background-color: #3617cd;
@@ -34,7 +34,7 @@ export const BoxButton = styled.button<{ showTimer: boolean }>`
     showTimer &&
     css`
       border: 1px solid ${({ theme }) => theme.COLOR.lightGray};
-      color: black;
+      color: ${({ theme }) => theme.COLOR.dark};
       background: none;
     `}
 `;

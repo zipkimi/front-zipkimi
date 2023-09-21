@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import InputLayout from "../InputLayout/Input.layout";
-import ZInputNew from "../ZInput/ZInputNew";
+import ZInput from "../ZInput/ZInput";
 import ZButton from "../ZButton/ZButton";
 import FormLayout from "../Layout/Form.layout";
 import TermsCheck from "../TermsCheck/TermsCheck";
@@ -67,8 +67,7 @@ const SignUp = () => {
       button={<ZButton type="submit">회원가입 완료</ZButton>}
     >
       <InputLayout htmlFor="id" label="아이디" required>
-        <ZInputNew
-          type="email"
+        <ZInput
           watch={watch}
           errors={errors}
           reset={reset}
@@ -78,7 +77,7 @@ const SignUp = () => {
         />
       </InputLayout>
       <InputLayout htmlFor="password" label="비밀번호" required>
-        <ZInputNew
+        <ZInput
           type="password"
           watch={watch}
           errors={errors}
@@ -89,7 +88,7 @@ const SignUp = () => {
         />
       </InputLayout>
       <InputLayout htmlFor="rePassword" label="비밀번호 확인" required>
-        <ZInputNew
+        <ZInput
           type="password"
           watch={watch}
           errors={errors}
@@ -100,7 +99,7 @@ const SignUp = () => {
         />
       </InputLayout>
       <InputLayout htmlFor="name" label="이름" required>
-        <ZInputNew
+        <ZInput
           type="text"
           watch={watch}
           errors={errors}

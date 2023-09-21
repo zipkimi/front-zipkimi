@@ -23,11 +23,13 @@ export const TypeNumber = styled.input.attrs({
 `;
 
 export const BoxButton = styled.button<{ showTimer: boolean }>`
+  ${({ theme }) => theme.TEXT.text15};
   border: 1px solid ${({ theme }) => theme.COLOR.lightGray};
   border-radius: 0 4px 4px 0;
   min-width: 75px;
   height: 48px;
   background-color: ${({ theme }) => theme.COLOR.whiteGray};
+  font-weight: ${({ theme }) => theme.FONT.medium};
   color: ${({ theme }) => theme.COLOR.gray};
   ${(props) =>
     props.showTimer &&

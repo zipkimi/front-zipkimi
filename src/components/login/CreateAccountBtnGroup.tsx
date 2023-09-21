@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import ZButton from "../ZButton/ZButton";
 import * as S from "./CreateAccountBtnGroup.style";
 import INaver from "../../assets/icon/icon_naver.png";
 import IKakao from "../../assets/icon/icon_kakao.png";
 import { ROUTES } from "../../const/ROUTES";
+import EmailLoginButton from "./EmailLoginButton";
 
 const CreateAccountBtnGroup = () => {
   const navigate = useNavigate();
@@ -23,9 +23,9 @@ const CreateAccountBtnGroup = () => {
         카카오로 계속하기
       </S.KakaoBtn>
       <S.MoreTxt>또는</S.MoreTxt>
-      <ZButton type="button" onClick={createAccount} isRound="xs" outline>
+      <EmailLoginButton type="button" onClick={createAccount}>
         이메일로 로그인 하기
-      </ZButton>
+      </EmailLoginButton>
     </S.BtnWrapper>
   );
 };

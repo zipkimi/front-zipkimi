@@ -6,31 +6,31 @@ export const InputWrapper = styled.div<{ isFocus: boolean }>`
   width: 100%;
   ${(props) => {
     if (props.isFocus) {
-      return `outline: 1px solid blue;`;
+      return `outline: 1px solid #333333;`;
     }
     return "";
   }}
 `;
 
 export const Input = styled.input<{ isError?: boolean }>`
-  border: 1px solid ${({ isError }) => (isError ? "#3a00e5" : "black")};
+  border: 1px solid
+    ${({ theme, isError }) =>
+      isError ? theme.COLOR.red : theme.COLOR.lightGray};
   border-radius: ${({ theme }) => theme.ROUND.xs};
   width: 100%;
   height: 48px;
-  padding: 14px 16px;
-  font-size: 1rem;
+  padding: 14px 80px 14px 14px;
+  ${({ theme }) => theme.TEXT.text15};
+  font-weight: ${({ theme }) => theme.FONT.medium};
   outline: none;
-  &::placeholder {
-    color: lightgray;
-  }
 `;
 
 export const BtnWrapper = styled.div`
   position: absolute;
-  right: 16px;
+  right: 14px;
   display: inline-flex;
   align-items: center;
-  column-gap: 0.5rem;
+  column-gap: 20px;
   height: 48px;
   z-index: 10;
 `;
@@ -40,13 +40,22 @@ export const CloseBtn = styled.button<{ isShow: boolean }>`
   cursor: ${({ isShow }) => (isShow ? "pointer" : "default")};
 `;
 
+export const ShowBtn = styled.button`
+  z-index: 10;
+`;
+
 export const Img = styled.img`
   width: 20px;
   height: 20px;
 `;
 
+export const ImgCheck = styled.img`
+  width: 20px;
+  height: 20px;
+`;
+
 export const ErrTxt = styled.p`
-  position: absolute;
-  margin-top: 0.3rem;
-  color: #3a00e5;
+  margin-top: 6px;
+  color: ${({ theme }) => theme.COLOR.red};
+  ${({ theme }) => theme.TEXT.text13}
 `;
