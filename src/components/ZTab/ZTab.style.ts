@@ -6,9 +6,10 @@ export const TabWrapper = styled.nav`
 
 export const TabBtn = styled.button<{ isSelected: boolean }>`
   border: none;
-  border-bottom: ${({ isSelected }) => (isSelected ? "2px" : "1px")} solid
-    ${({ theme, isSelected }) =>
-      isSelected ? theme.COLOR.original : theme.COLOR.gray};
+  border-bottom: ${({ theme, isSelected }) =>
+    isSelected
+      ? `2px solid ${theme.COLOR.original}`
+      : `1px solid ${theme.COLOR.gray}`};
   width: 100%;
   padding-bottom: 10px;
   ${({ theme }) => theme.TEXT.text13};

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useLocation, useNavigate } from "react-router-dom";
+import styled from "styled-components";
 import ZButton from "../../components/ZButton/ZButton";
 import HeaderLayout from "../../components/Layout/Header.layout";
 import FormLayout from "../../components/Layout/Form.layout";
@@ -64,16 +65,18 @@ const Index = () => {
   return (
     <BodyStyle>
       <HeaderLayout title="찾기" btn="back" />
-      <FormLayout
-        button=""
-        onSubmit={handleSubmit(onSubmit)}
-        style={{ marginTop: "-10px" }}
-      >
+      <TabWrapper>
         <ZTab
           tabs={["아이디 찾기", "비밀번호 찾기"]}
           onChangeTab={changeTab}
           defaultTab={location.state?.name}
         />
+      </TabWrapper>
+      <FormLayout
+        button=""
+        onSubmit={handleSubmit(onSubmit)}
+        style={{ marginTop: "-10px" }}
+      >
         {tab === "아이디 찾기" && (
           <>
             <AuthCheck />
@@ -104,3 +107,18 @@ const Index = () => {
 };
 
 export default Index;
+
+const TabWrapper = styled.div`
+  position: relative;
+  padding: 9px 20px 0 20px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 1px;
+    background-color: ${({ theme }) => theme.COLOR.lightGray};
+  }
+`;
