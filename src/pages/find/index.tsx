@@ -72,11 +72,7 @@ const Index = () => {
           defaultTab={location.state?.name}
         />
       </TabWrapper>
-      <FormLayout
-        button=""
-        onSubmit={handleSubmit(onSubmit)}
-        style={{ marginTop: "-10px" }}
-      >
+      <FormLayout button="" onSubmit={handleSubmit(onSubmit)}>
         {tab === "아이디 찾기" && (
           <>
             <AuthCheck />
@@ -110,7 +106,7 @@ export default Index;
 
 const TabWrapper = styled.div`
   position: relative;
-  padding: 9px 20px 0 20px;
+  padding: 10px 20px 0 20px;
   &::after {
     content: "";
     position: absolute;
@@ -119,6 +115,6 @@ const TabWrapper = styled.div`
     z-index: -1;
     width: 100%;
     height: 1px;
-    background-color: ${({ theme }) => theme.COLOR.lightGray};
+    background-color: ${({ theme }) => theme.COLOR.gray};
   }
 `;

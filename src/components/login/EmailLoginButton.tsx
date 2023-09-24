@@ -14,7 +14,7 @@ export const Button = styled.button`
   border: 1px solid ${({ theme }) => theme.COLOR.lightGray};
   border-radius: ${({ theme }) => theme.ROUND.xs};
   width: 100%;
-  height: 56px;
+  height: 52px;
   padding: 14px 16px;
   font-size: 1rem;
   font-weight: ${({ theme }) => theme.FONT.medium};

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
-  margin: 26px 0 10px 0;
+  margin: 26px 0 66px 0;
 `;
 
 export const DivideLine = styled.div`

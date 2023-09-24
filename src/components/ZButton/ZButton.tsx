@@ -13,7 +13,7 @@ interface Props extends ButtonHTMLAttributes<unknown> {
 const ZButton = ({
   color = "original",
   isRound = "none",
-  height = 56,
+  height = 52,
   outline = false,
   ...props
 }: Props) => {
@@ -42,7 +42,7 @@ export const Button = styled.button<{
     outline ? `1px solid ${theme.COLOR[colored]}` : "none"};
   border-radius: ${({ theme, round }) => theme.ROUND[round]};
   width: 100%;
-  height: ${({ height }) => `${height}px`};
+  min-height: ${({ height }) => `${height}px`};
   padding: 14px 16px;
   font-size: 1rem;
   font-weight: ${({ theme }) => theme.FONT.medium};

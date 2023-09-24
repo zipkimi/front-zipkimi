@@ -64,7 +64,13 @@ const SignUp = () => {
     <FormLayout
       action=""
       onSubmit={handleSubmit(onSubmit)}
-      button={<ZButton type="submit">회원가입 완료</ZButton>}
+      button={
+        <div style={{ position: "absolute", bottom: "0", width: "100%" }}>
+          <ZButton type="submit" height={56}>
+            회원가입 완료
+          </ZButton>
+        </div>
+      }
     >
       <InputLayout htmlFor="id" label="아이디" required>
         <ZInput

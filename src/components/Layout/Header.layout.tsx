@@ -28,10 +28,15 @@ const HeaderLayout = ({ btn, title }: Props) => {
 export default HeaderLayout;
 
 const Header = styled.header`
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
+  background-color: white;
+  z-index: 100;
 `;
 
 const Img = styled.img`
