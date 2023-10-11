@@ -65,7 +65,7 @@ const SignUp = () => {
       action=""
       onSubmit={handleSubmit(onSubmit)}
       button={
-        <div style={{ position: "absolute", bottom: "0", width: "100%" }}>
+        <div style={{ position: "fixed", bottom: "0", width: "100%" }}>
           <ZButton type="submit" height={56}>
             회원가입 완료
           </ZButton>
