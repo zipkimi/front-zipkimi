@@ -11,7 +11,7 @@ const Index = () => {
   const navigate = useNavigate();
 
   return (
-    <BodyStyle>
+    <BodyStyle style={{ height: "100vh" }}>
       <div>
         <HeaderLayout title="찾기" btn="back" />
         <FindSuccessContents />

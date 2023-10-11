@@ -9,7 +9,7 @@ const Index = () => {
   const navigate = useNavigate();
 
   return (
-    <BodyStyle>
+    <BodyStyle style={{ height: "100vh" }}>
       <div>
         <HeaderLayout title="회원가입" btn="back" />
         <SuccessAlert />
