@@ -5,6 +5,8 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: -0.02em;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    user-select: none;
   }
 
   html, body, div, span, applet, object, iframe,
