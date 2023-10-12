@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import InputLayout from "../InputLayout/Input.layout";
@@ -6,6 +7,7 @@ import ZButton from "../ZButton/ZButton";
 import FormLayout from "../Layout/Form.layout";
 import TermsCheck from "../TermsCheck/TermsCheck";
 import AuthCheck from "../AuthCheck/AuthCheck";
+import { signUp } from "../../api/API";
 
 const SignUp = () => {
   const {
@@ -17,8 +19,9 @@ const SignUp = () => {
     formState: { errors },
   } = useForm();
   const navigate = useNavigate();
+  const [isDisabled, setIsDisabled] = useState(true);
 
-  const onSubmit = (data: unknown) => {
+  const onSubmit = async (data: unknown) => {
     console.log(data);
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
@@ -28,8 +31,16 @@ const SignUp = () => {
         { message: "비밀번호가 일치하지 않습니다." },
         { shouldFocus: true },
       );
+    } else {
+      const reqData = {
+        email: "test@test.com",
+        name: "지존검객",
+        pw: "test11!!",
+        auth: "1234",
+      };
+      await signUp(reqData);
+      navigate("/success");
     }
-    navigate("/success");
   };
 
   const emailRegister = register("email", {
@@ -66,7 +77,7 @@ const SignUp = () => {
       onSubmit={handleSubmit(onSubmit)}
       button={
         <div style={{ position: "fixed", bottom: "0", width: "100%" }}>
-          <ZButton type="submit" height={56}>
+          <ZButton type="submit" height={56} disabled={isDisabled}>
             회원가입 완료
           </ZButton>
         </div>
@@ -116,7 +127,7 @@ const SignUp = () => {
         />
       </InputLayout>
       <AuthCheck />
-      <TermsCheck />
+      <TermsCheck setIsDisabled={setIsDisabled} />
     </FormLayout>
   );
 };
