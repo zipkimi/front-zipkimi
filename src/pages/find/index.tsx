@@ -11,9 +11,20 @@ import ZInput from "../../components/ZInput/ZInput";
 import { BodyStyle } from "../../style/style";
 import { ROUTES } from "../../const/ROUTES";
 import AuthCheck from "../../components/AuthCheck/AuthCheck";
+import Modal from "../../components/FindIdModal/ModalLogin";
+import WarningImage from "../../assets/icon/icon_warning.png";
 
 const Index = () => {
   const [tab, setTab] = useState("아이디 찾기");
+  const [isModalOpen, setIsModalOpen] = useState(false); // 아이디 찾기 모달 창 클릭 여부
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   const navigate = useNavigate();
   const location = useLocation();
   const {
@@ -76,7 +87,14 @@ const Index = () => {
         {tab === "아이디 찾기" && (
           <>
             <AuthCheck />
-            <ZButton isRound="xs">아이디 찾기</ZButton>
+            <ZButton isRound="xs" onClick={openModal}>
+              아이디 찾기
+            </ZButton>
+            <Modal isOpen={isModalOpen} onClose={closeModal}>
+              <WarningImg src={WarningImage} />
+              <p>입력하신 휴대폰 번호와 일치하는 정보가</p>
+              <p>없습니다. (고객센터 문의 요망)</p>
+            </Modal>
           </>
         )}
         {tab === "비밀번호 찾기" && (
@@ -117,4 +135,11 @@ const TabWrapper = styled.div`
     height: 1px;
     background-color: ${({ theme }) => theme.COLOR.gray};
   }
+`;
+
+const WarningImg = styled.img`
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 20px;
 `;
