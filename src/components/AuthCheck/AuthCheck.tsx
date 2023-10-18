@@ -23,7 +23,7 @@ const AuthCheck = () => {
         <AuthInput
           showTimer={showTimer}
           onButtonClick={handleButtonClick}
-          setIsReset={setIsReset}
+          // setIsReset={setIsReset}
         />
       </InputLayout>
       <InputLayout htmlFor="auth" label="인증 번호" required>
