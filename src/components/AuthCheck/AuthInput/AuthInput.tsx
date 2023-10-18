@@ -1,9 +1,8 @@
-import React from "react";
 import * as S from "./AuthInput.style";
 
 type Props = {
   showTimer: boolean;
-  // setIsReset: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsReset: React.Dispatch<React.SetStateAction<boolean>>;
   onButtonClick: () => void;
 };
 
